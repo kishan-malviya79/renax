@@ -9,6 +9,7 @@ import {
 import * as MenubarPrimitive from "@radix-ui/react-menubar"
 
 import { cn } from "@/lib/utils"
+import { ChevronDown } from "lucide-react"
 
 const MenubarMenu = MenubarPrimitive.Menu
 
@@ -67,6 +68,7 @@ const MenubarSubTrigger = React.forwardRef<
   >
     {children}
     <ChevronRightIcon className="ml-auto h-4 w-4" />
+
   </MenubarPrimitive.SubTrigger>
 ))
 MenubarSubTrigger.displayName = MenubarPrimitive.SubTrigger.displayName
