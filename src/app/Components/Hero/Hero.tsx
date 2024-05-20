@@ -34,6 +34,7 @@ function Hero() {
 
                                             <h1 className='text-[#f5b754]  flex items-start text-2xl font-bold'>$600 </h1><span>/Day</span>
                                         </div>
+                                        
                                     </div>
                                     <div className="flex gap-4">
 
