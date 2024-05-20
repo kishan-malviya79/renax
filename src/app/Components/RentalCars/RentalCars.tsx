@@ -18,19 +18,21 @@ import {
 
 function RentalCars() {
   return (
-    <div className="w-full bg-fixed "
+    <div className="w-full bg-fixed relative ">
+    <div className="w-full bg-fixed    bg-[#000] before:contain-none  z-10 opacity-80"
      style={{
         backgroundImage: `url(${`o.jpg`})`, // Replace BgOverview with your actual variable name for the background image
         backgroundSize: 'cover', // Adjust as needed
         backgroundPosition: 'center',
         backgroundRepeat: "no-repeat",
+        width:"full"
 
     }}>
     <div className="  w-full py-28 " >
 
     <div className=' relative items-center  justify-center content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
     <div className="  items-center flex flex-col gap-4">
-        <h5 className=' size-5 relative right-3 text-[#f5b754] tracking-[6px] text-[12px]'> RENT NOW</h5>
+        <h5 className=' size-5 relative right-3 w-[18ch] text-[#f5b754] tracking-[6px] text-[12px]'> RENT NOW</h5>
         <h1 className=' font-Outfit, font-bold  text-[35px]'>Book Auto Rental</h1>
         <div className=" w-full flex bg-black gap-3  px-6 py-6 items-center rounded-full ">
           <Menubar >
@@ -102,7 +104,7 @@ function RentalCars() {
                 Rent Now  
             </Button>
         </div>
-
+        </div>
         </div>
         </div> 
     </div>
