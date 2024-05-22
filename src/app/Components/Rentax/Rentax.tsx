@@ -5,7 +5,7 @@ import React from 'react'
 
 function Rentax() {
   return (
-    <div className="bg-black py-28">
+    <div className="bg-[#1b1b1b]  py-28">
 
     <div className=' relative items-center  justify-between  content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
     <div className=" flex flex-col gap-4">

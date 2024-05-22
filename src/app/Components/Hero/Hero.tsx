@@ -12,7 +12,7 @@ import {
 import Nav from '@/app/Nav/page'
 function Hero() {
     return (
-        <div className=" w-full overflow-x-hidden bg-black ">
+        <div className=" w-full overflow-x-hidden bg-[#1b1b1b] ">
             <Nav />
             <Carousel>
                 <CarouselContent>
