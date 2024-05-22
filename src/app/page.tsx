@@ -7,6 +7,7 @@ import LuxuryCar from './Components/LuxuryCar/LuxuryCar';
 import RentalCarsTypes from './Components/RentalCarsTypes/RentalCarsTypes';
 import RentalCarsType from './Components/Card/Card';
 import CarRentalProcess from './Components/CarRentalProcess/CarRentalProcess';
+import RentalCars1 from './Components/CarPromo/CarPromo';
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <LuxuryCar/>
       <RentalCarsTypes/>
       <CarRentalProcess/>
+      <RentalCars1/>
+      
     </div>
   );
 }
