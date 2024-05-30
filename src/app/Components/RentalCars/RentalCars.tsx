@@ -18,8 +18,9 @@ import {
 
 function RentalCars() {
   return (
+    
     <div className="w-full bg-fixed relative ">
-    <div className="w-full bg-fixed    bg-[#1b1b1b]  before:contain-none  z-10 opacity-80"
+    <div className="w-full bg-fixed   "
      style={{
         backgroundImage: `url(${`o.jpg`})`, // Replace BgOverview with your actual variable name for the background image
         backgroundSize: 'cover', // Adjust as needed
@@ -28,6 +29,7 @@ function RentalCars() {
         width:"full"
 
     }}>
+       <div className="absolute inset-0 bg-black opacity-50"></div>
     <div className="  w-full py-28 " >
 
     <div className=' relative items-center  justify-center content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>

@@ -10,7 +10,7 @@ import React, { useState } from 'react'
 
 
 function CarRentalProcess() {
-   
+
 
     return (
         <div className="w-full h-[80%] bg-[#1b1b1b]">
@@ -23,61 +23,61 @@ function CarRentalProcess() {
                             <h1 className='font-Outfit font-bold w-full text-[35px]'>  Car Rental <span className='text-[#f5b754]'>  Process</span></h1>
                         </div>
                     </div>
-                    <div  className='w-full'>
-                            <div className="-ml-1">
+                    <div className='w-full'>
+                        <div className="-ml-1">
+                        </div>
+                    </div>
+                    <div className="md:basis-1/2  flex gap-6 text-white lg:basis-1/3">
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
+
+
+                            <p className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Choose A Car</p>
+                            <p className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">View our range of cars, find your perfect car for the coming days.</p>
+                            <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
+
+                            </div>
+                            <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
+                                <div className='absolute content-center  top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
+                                    <p className="font-Outfit font-bold text-white  text-[15px]">01.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="md:basis-1/2  flex gap-6 text-white lg:basis-1/3">
-            <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
-                
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
 
-                <p  className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Choose A Car</p>
-                <p  className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">View our range of cars, find your perfect car for the coming days.</p>
-                <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
-                   
-                </div>
-                <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
-                <div className='absolute content-center  top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                    <p  className="font-Outfit font-bold text-white  text-[15px]">01.</p>
+
+                            <p className="font-Outfit font-bold text-white w-[13ch] text-[20px]">Come In Contact</p>
+                            <p className="object-contain text-[12px] w-[34ch]  opacity-60  text-white ">Our advisor team is ready to help you with the booking process or any questions.</p>
+                            <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
+
+                            </div>
+                            <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
+                                <div className='absolute content-center top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
+                                    <p className="font-Outfit font-bold text-white  text-[15px]">02.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
+
+
+                            <p className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Enjoy Driving</p>
+                            <p className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">Receive the key and enjoy your car. We treat all our cars with respect.</p>
+                            <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
+
+                            </div>
+                            <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
+                                <div className='absolute content-center top-[15px] left-0 h-8 px-4 py-7 bg-[#222222]  rounded-[65px]'>
+                                    <p className="font-Outfit font-bold text-white   text-[15px]">03.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
-                
+                    <div className="flex gap-4 items-center justify-center">
+                        <span className="font-mono text-white  px-[7px] py-[1px] bg-[#444444]  rounded-[50px]  text-[12px]">i</span>
 
-                <p  className="font-Outfit font-bold text-white w-[13ch] text-[20px]">Come In Contact</p>
-                <p  className="object-contain text-[12px] w-[34ch]  opacity-60  text-white ">Our advisor team is ready to help you with the booking process or any questions.</p>
-                <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
-                   
-                </div>
-                <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
-                <div  className='absolute content-center top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                    <p  className="font-Outfit font-bold text-white  text-[15px]">02.</p>
+                        <p className="object-contain text-[12px]  opacity-60  text-white ">If you've never rented a car before, we'll guide you through the process.</p>
                     </div>
-                </div>
-            </div>
-            <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
-                
 
-                <p  className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Enjoy Driving</p>
-                <p  className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">Receive the key and enjoy your car. We treat all our cars with respect.</p>
-                <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
-                   
-                </div>
-                <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
-                    <div  className='absolute content-center top-[15px] left-0 h-8 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                    <p  className="font-Outfit font-bold text-white   text-[15px]">03.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="flex gap-4 items-center justify-center">
-        <span  className="font-mono text-white  px-[7px] py-[1px] bg-[#444444]  rounded-[50px]  text-[12px]">i</span>
 
-        <p className="object-contain text-[12px]  opacity-60  text-white ">If you've never rented a car before, we'll guide you through the process.</p>
-        </div>
-
-                       
                 </div>
             </div>
         </div>

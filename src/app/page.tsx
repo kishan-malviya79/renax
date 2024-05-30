@@ -8,6 +8,7 @@ import RentalCarsTypes from './Components/RentalCarsTypes/RentalCarsTypes';
 import RentalCarsType from './Components/Card/Card';
 import CarRentalProcess from './Components/CarRentalProcess/CarRentalProcess';
 import RentalCars1 from './Components/CarPromo/CarPromo';
+import ClientsSay from './Components/ClientsSay/ClientsSay';
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <RentalCarsTypes/>
       <CarRentalProcess/>
       <RentalCars1/>
-      
+      <ClientsSay/> 
     </div>
   );
 }
