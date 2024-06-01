@@ -9,6 +9,7 @@ import RentalCarsType from './Components/Card/Card';
 import CarRentalProcess from './Components/CarRentalProcess/CarRentalProcess';
 import RentalCars1 from './Components/CarPromo/CarPromo';
 import ClientsSay from './Components/ClientsSay/ClientsSay';
+import LatestNews from './Components/LatestNews/LatestNews';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CarRentalProcess/>
       <RentalCars1/>
       <ClientsSay/> 
+      <LatestNews/>
     </div>
   );
 }

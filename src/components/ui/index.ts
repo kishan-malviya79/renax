@@ -83,6 +83,14 @@
   { src: '/05.jpg', title: 'Sedan' },
   { src: '/06.jpg', title: 'Small Cars' },
 ];
+ export const carNews = [
+  { src: '/GreenCar.jpg', title: 'Rental', p:'Document Required for car rental' },
+  { src: '/04(1).jpg', title: 'SPORT CARS', p:'' },
+  { src: '/05(1).jpg', title: 'FINES', p:'' },
+  { src: '/o.jpg', title: 'AIR PORT', p:'' },
+  { src: '/01(1).jpg', title: 'RULES', p:'' },
+  { src: '/bugatti.jpg', title: 'RENTAL Cars', p:'' },
+];
 // export const LuxuryCarData = [
 //     {
 //       id: 1,
