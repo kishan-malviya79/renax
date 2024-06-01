@@ -14,7 +14,7 @@ function CarRentalProcess() {
 
     return (
         <div className="w-full h-[80%] bg-[#1b1b1b]">
-            <div className="w-full">
+            <div className="w-full  ">
                 <div className='relative items-center  gap-8 top-28  flex-col text-white flex px- w-full md:w-[1440px] mx-auto md:py-0'>
                     <span className='w-[1px] flex items-center justify-center bg-[#f5b754] h-12'></span>
                     <div className="">
@@ -84,3 +84,51 @@ function CarRentalProcess() {
 }
 
 export default CarRentalProcess;
+
+    // return (
+    //     <div className="w-full bg-[#1b1b1b] py-12">
+    //         <div className="max-w-screen-lg mx-auto px-4">
+    //             <div className="text-center text-white mb-8">
+    //                 <h5 className="text-[#f5b754] text-xs uppercase tracking-[6px]">STEPS</h5>
+    //                 <h1 className="font-Outfit font-bold text-3xl md:text-4xl mb-4">Car Rental <span className="text-[#f5b754]">Process</span></h1>
+    //             </div>
+    //             <div className="flex flex-col md:flex-row gap-4">
+    //                 {/* Step 1 */}
+    //                 <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-6 md:p-14 gap-4 flex-1">
+    //                     <p className="font-Outfit font-bold text-white text-lg md:text-xl">Choose A Car</p>
+    //                     <p className="text-xs md:text-sm opacity-60">View our range of cars, find your perfect car for the coming days.</p>
+    //                     <div className="flex justify-center items-center mt-auto">
+    //                         <div className="bg-[#1b1b1b] w-14 h-14 flex justify-center items-center rounded-full">
+    //                             <p className="font-Outfit font-bold text-white text-lg">01</p>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //                 {/* Step 2 */}
+    //                 <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-6 md:p-14 gap-4 flex-1">
+    //                     <p className="font-Outfit font-bold text-white text-lg md:text-xl">Come In Contact</p>
+    //                     <p className="text-xs md:text-sm opacity-60">Our advisor team is ready to help you with the booking process or any questions.</p>
+    //                     <div className="flex justify-center items-center mt-auto">
+    //                         <div className="bg-[#1b1b1b] w-14 h-14 flex justify-center items-center rounded-full">
+    //                             <p className="font-Outfit font-bold text-white text-lg">02</p>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //                 {/* Step 3 */}
+    //                 <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-6 md:p-14 gap-4 flex-1">
+    //                     <p className="font-Outfit font-bold text-white text-lg md:text-xl">Enjoy Driving</p>
+    //                     <p className="text-xs md:text-sm opacity-60">Receive the key and enjoy your car. We treat all our cars with respect.</p>
+    //                     <div className="flex justify-center items-center mt-auto">
+    //                         <div className="bg-[#1b1b1b] w-14 h-14 flex justify-center items-center rounded-full">
+    //                             <p className="font-Outfit font-bold text-white text-lg">03</p>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //             <div className="flex justify-center items-center mt-4">
+    //                 <span className="font-mono text-white bg-[#444444] rounded-full px-2 py-1 text-xs mr-2">i</span>
+    //                 <p className="text-xs opacity-60">If you've never rented a car before, we'll guide you through the process.</p>
+    //             </div>
+    //         </div>
+    //     </div>
+    // );
+

@@ -11,6 +11,8 @@ import RentalCars1 from './Components/CarPromo/CarPromo';
 import ClientsSay from './Components/ClientsSay/ClientsSay';
 import LatestNews from './Components/LatestNews/LatestNews';
 import CarPromo from './Components/InterestedReting/InterestedReting';
+import CarMarquee from '@/components/ui/Marquee/Marquee';
+import ContactMenu from '@/components/ContactMenu/ContactMenu';
 
 export default function Home() {
   return (
@@ -25,7 +27,8 @@ export default function Home() {
       <ClientsSay/> 
       <LatestNews/>
       <CarPromo/>
-      <ClientsSay/> 
+      <CarMarquee/>
+      <ContactMenu/>
     </div>
   );
 }

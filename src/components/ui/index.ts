@@ -182,3 +182,4 @@ export const carr = [
   { p: '5', title: 'Sedan' },
   { p: '6', title: 'Small Cars' },
 ];
+
