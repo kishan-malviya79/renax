@@ -10,6 +10,7 @@ import CarRentalProcess from './Components/CarRentalProcess/CarRentalProcess';
 import RentalCars1 from './Components/CarPromo/CarPromo';
 import ClientsSay from './Components/ClientsSay/ClientsSay';
 import LatestNews from './Components/LatestNews/LatestNews';
+import CarPromo from './Components/InterestedReting/InterestedReting';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <RentalCars1/>
       <ClientsSay/> 
       <LatestNews/>
+      <CarPromo/>
     </div>
   );
 }
