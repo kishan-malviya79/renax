@@ -53,7 +53,7 @@ function LatestNews() {
     };
 
     return (
-        <div className="w-full pt-28  bg-[#1b1b1b]">
+        <div className="w-full pt-28 pb-20 bg-[#1b1b1b]">
             <div className="w-full">
                 <div className='relative items-center justify-center gap-8  flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'>
                     <span className='w-[1px] flex items-center mb-16 justify-center bg-[#f5b754] h-12'></span>

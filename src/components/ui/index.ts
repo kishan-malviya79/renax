@@ -86,7 +86,7 @@
  export const carNews = [
   { src: '/GreenCar.jpg', title: 'Rental', p:'Document Required for car rental' },
   { src: '/04(1).jpg', title: 'SPORT CARS', p:'Rental cost of sport and other cars' },
-  { src: '/05(1).jpg', title: 'FINES', p:'Rental car how to check driving fines?' },
+  { src: '/blackcar.jpg', title: 'FINES', p:'Rental car how to check driving fines?' },
   { src: '/o.jpg', title: 'AIR PORT', p:'How to Rent a Car at the aitport Terminal?' },
   { src: '/01(1).jpg', title: 'RULES', p:'Penalties for violating the ruels in rental cars ' },
   { src: '/bugatti.jpg', title: 'RENTAL Cars', p:'How to check a before reting? ' },

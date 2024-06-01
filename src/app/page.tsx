@@ -25,6 +25,7 @@ export default function Home() {
       <ClientsSay/> 
       <LatestNews/>
       <CarPromo/>
+      <ClientsSay/> 
     </div>
   );
 }

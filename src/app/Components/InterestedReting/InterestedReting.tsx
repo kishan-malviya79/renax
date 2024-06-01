@@ -3,13 +3,13 @@ import { ArrowUpRight, MessageCircle, Play } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
 
-function CarPromo() {
+function CarPromo() {   
     return (
         <div className="w-full bg-fixed relative">
             <div
-                className="w-full  bg-fixed bg-cover bg-center bg-no-repeat relative"
+                className="w-full  bg-fixed bg-cover bg-center  bg-no-repeat relative"
                 style={{
-                    backgroundImage: `url(${`05(1).jpg`})`, // Replace bugatti.jpg with your actual image file name or path
+                    backgroundImage: `url(${`blackcar.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
                 }}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div> {/* Black overlay */}
@@ -25,7 +25,7 @@ function CarPromo() {
                                 <div className="flex gap-4">
 
                                     <Button>
-                                        WhatsApp <MessageCircle className="mr-2 h-4 w-4" />
+                                         <MessageCircle className="mr-2 h-4 w-4" />WhatsApp
                                     </Button>
                                     <Button className=' bg-transparent border text-white hover:text-black hover:bg-[#f5b754]'>
                                         Rent Now  <ArrowUpRight className="mr-2 h-4 w-4" />
