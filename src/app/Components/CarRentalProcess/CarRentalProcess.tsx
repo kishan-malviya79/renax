@@ -73,7 +73,6 @@ function CarRentalProcess() {
                     </div>
                     <div className="flex gap-4 items-center justify-center">
                         <span className="font-mono text-white  px-[7px] py-[1px] bg-[#444444]  rounded-[50px]  text-[12px]">i</span>
-
                         <p className="object-contain text-[12px]  opacity-60  text-white ">If you've never rented a car before, we'll guide you through the process.</p>
                     </div>
 
