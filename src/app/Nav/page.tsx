@@ -16,7 +16,7 @@ import { Menu, PhoneCall } from 'lucide-react';
 
 function Nav() {
   return (
-    <div className="  bg-transparent  w-full  py-6">
+    <div className="  bg-transparent  w-full  py-2 sm:py-6">
       <div className=" items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
         <Image
           src={`/Renax-logo.png`}
