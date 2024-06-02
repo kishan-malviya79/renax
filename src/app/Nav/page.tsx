@@ -11,13 +11,13 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 import Image from "next/image"
-import { PhoneCall } from 'lucide-react';
+import { Menu, PhoneCall } from 'lucide-react';
 
 
 function Nav() {
   return (
     <div className="  bg-transparent  w-full  py-6">
-      <div className=" items-center justify-between text-white flex gap-24 py-6 px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
+      <div className=" items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
         <Image
           src={`/Renax-logo.png`}
           alt="jordans"
@@ -25,7 +25,8 @@ function Nav() {
           width="120"
           className="object-contain  "
         />
-        <div className="flex gap-6">
+        <Menu className="  sm:hidden "/>
+        <div className="sm:flex  hidden gap-6">
           <Menubar >
             <MenubarMenu>
               <MenubarTrigger>Home</MenubarTrigger>
@@ -95,7 +96,7 @@ function Nav() {
             </MenubarMenu>
 
           </Menubar>
-          <div className="flex text-white justify-between h-10  gap-4">
+          <div className="sm:flex text-white justify-between hidden h-10  gap-4">
 
             <div className=" border-[1px] rounded-[50%] px-2 py-2 border-[#f5b754] justify-center items-center flex ">
               <PhoneCall />

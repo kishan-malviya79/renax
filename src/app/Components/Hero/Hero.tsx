@@ -26,10 +26,10 @@ function Hero() {
                                 backgroundSize: 'cover', // Adjust as needed
                                 backgroundPosition: 'center', // Adjust as needed
                             }}>
-                            <div className=' items-center  content-center h-screen text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
-                                <div className=" flex flex-col gap-5">
+                            <div className=' items-center  content-center h-screen text-white flex px-4  lg:px-36    w-full md:w-[1440px] mx-auto md:py-10'>
+                                <div className=" flex flex-col sm:gap-5 gap-2">
                                     <h5 className=' text-[#f5b754] tracking-[6px] text-[12px]'> <span>*</span> PREMIUM</h5>
-                                    <h1 className=' font-Outfit, font-bold leading-10 text-[90px]'>Rental Car</h1>
+                                    <h1 className=' font-Outfit font-bold leading-10  text-[30px] sm:text-[90px]'>Rental Car</h1>
                                     <div className="flex gap-4">
                                         <h2 className='relative'>Bentley Bantayga  </h2>
                                         <div className="flex items-center justify-center">
@@ -38,13 +38,13 @@ function Hero() {
                                         </div>
                                         
                                     </div>
-                                    <div className="flex gap-4">
+                                    <div className="flex sm:flex-row flex-col gap-6 sm:gap-4">
 
                                         <Button>
-                                            View Details <ArrowUpRight className="mr-2 h-4 w-4" />
+                                            View Details <ArrowUpRight className=" mr-2 h-4 w-4" />
                                         </Button>
                                         <Button className=' bg-transparent border text-white hover:text-black hover:bg-[#f5b754]'>
-                                            Rent Now  <ArrowUpRight className="mr-2 h-4 w-4" />
+                                            Rent Now  <ArrowUpRight className=" mr-2 h-4 w-4" />
                                         </Button>
                                     </div>
                                 </div>
@@ -96,7 +96,7 @@ function Hero() {
 
                             <div className=" flex flex-col gap-5">
                                 <h5 className=' text-[#f5b754] tracking-[6px] text-[12px]'> <span>*</span> PREMIUM</h5>
-                                <h1 className=' font-Outfit, font-bold leading-10 text-[90px]'>Rental Car</h1>
+                                <h1 className='font-Outfit font-bold leading-10 text-[30px] sm:text-[90px]'>Rental Car</h1>
                                 <div className="flex gap-4">
                                     <h2 className='relative'>Rolls Royce Cullinan </h2>
                                     <div className="flex items-center justify-center">
@@ -127,3 +127,5 @@ function Hero() {
 }
 
 export default Hero
+
+

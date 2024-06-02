@@ -80,6 +80,8 @@
     animation: marquee 10s linear infinite  ;
   }
 
+  
+
 
   @layer base {
     * {
