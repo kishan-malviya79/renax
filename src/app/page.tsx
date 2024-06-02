@@ -27,8 +27,8 @@ export default function Home() {
       <ClientsSay/> 
       <LatestNews/>
       <CarPromo/>
-      <CarMarquee/>
-      <ContactMenu/>
+      {/* <CarMarquee/> */}
+      {/* <ContactMenu/> */}
     </div>
   );
 }
