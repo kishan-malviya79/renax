@@ -21,7 +21,7 @@ const HomePage = () => {
     '7.png',
     '8.png',
     
-    
+      
     // Add more logo filenames here
   ];
 

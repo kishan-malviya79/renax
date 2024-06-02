@@ -86,6 +86,7 @@ function RentalCarsTypes() {
                                     value="2"
                                     checked={selectedSet === 2}
                                     onChange={() => setSelectedSet(2)}
+                                    
                                     className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
                                 />
                               
