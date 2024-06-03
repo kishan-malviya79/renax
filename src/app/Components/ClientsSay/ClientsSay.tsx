@@ -45,7 +45,8 @@ function ClientsSay() {
     return (
         <div className="w-full pt-44  bg-[#1b1b1b]">
             <div className="w-full">
-                <div className='relative items-center justify-center gap-8  leading-7 flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+                {/* <div className='relative items-center justify-center gap-8  leading-7 flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'> */}
+                <div className="relative items-center justify-center text-white gap-8 flex flex-col  sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
                             <h5 className='size-5 flex items-center justify-center right-3 w-full text-[#f5b754] tracking-[6px] text-[12px]'>TESTIMONIALS</h5>

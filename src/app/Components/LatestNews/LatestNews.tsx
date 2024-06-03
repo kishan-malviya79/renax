@@ -22,7 +22,7 @@ function CarouselItemComponent({ src, title, p }: CarNews) {
                     alt={title}
                     height="500"
                     width="500"
-                    className="object-contain rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100"
+                    className="object-contain relative right-1 sm:right-0  rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100"
                 />
                 <div className="absolute top-4 right-8 w-[85px] h-[85px] text-centr rounded-tl-none rounded-tr-lg">
                     <div className='absolut top-52 relative right-9 end-0   bg-transparent text-white'>
@@ -31,7 +31,7 @@ function CarouselItemComponent({ src, title, p }: CarNews) {
                         <h1 className='font-Outfit font-bold w-[10ch] text-[20px]'>{p}</h1>
                     </div>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
+                <div className="absolute bottom-0 -left-1 sm:left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
                     <Button className='absolute top-[15px] left-0 h-8 px-6 py-6 bg-transparent border-[#f5b754] border hover:bg-[#f5b754] rounded-[50px]'>
                         <ArrowUpRight className="text-white" />
                     </Button>
@@ -55,7 +55,9 @@ function LatestNews() {
     return (
         <div className="w-full pt-28 pb-20 bg-[#1b1b1b]">
             <div className="w-full">
-                <div className='relative items-center justify-center gap-8  flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+                {/* <div className='relative items-center justify-center gap-8  flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'> */}
+          <div className="relative items-center justify-center text-white gap-8 flex flex-col  sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
+
                     <span className='w-[1px] flex items-center mb-16 justify-center bg-[#f5b754] h-12'></span>
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
