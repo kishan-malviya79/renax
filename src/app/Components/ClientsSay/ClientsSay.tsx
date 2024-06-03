@@ -45,8 +45,7 @@ function ClientsSay() {
     return (
         <div className="w-full pt-44  bg-[#1b1b1b]">
             <div className="w-full">
-                {/* <div className='relative items-center justify-center gap-8  leading-7 flex-col text-white flex px-36 w-full md:w-[1440px] mx-auto md:py-0'> */}
-                <div className="relative items-center justify-center text-white gap-8 flex flex-col  sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
+                 <div className='relative items-center justify-center gap-8  leading-7 flex-col text-white flex sm:px-36 w-full md:w-[1440px] mx-auto md:py-0'>
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
                             <h5 className='size-5 flex items-center justify-center right-3 w-full text-[#f5b754] tracking-[6px] text-[12px]'>TESTIMONIALS</h5>
@@ -60,7 +59,7 @@ function ClientsSay() {
 
                                 </div>
                                 <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[95px] text-center rounded-tr-[40px]">
-                                    <div className='absolute content-cente   left-0 h-1 px-2 py-4  '>
+                                    {/* <div className='absolute content-center   left-5 h-1 px-2 py-  '>
                                         <Image
                                             src={'/1.jpg'}
                                             alt={'w'}
@@ -68,10 +67,10 @@ function ClientsSay() {
                                             width="500"
                                             className="object-contain  rounded-[50px] "
                                         />
-                                    </div>
+                                    </div> */}
                                 </div>
 
-                                <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-12 gap-4 pl-10 h-80 w-95 relative">
+                                <div className="flex flex-col left-5 sm:left-0 bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-12 gap-4 pl-10 h-80 w-95 relative">
                                     <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
                                     </div>
