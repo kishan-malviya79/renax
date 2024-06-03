@@ -13,12 +13,15 @@ import LatestNews from './Components/LatestNews/LatestNews';
 import CarPromo from './Components/InterestedReting/InterestedReting';
 import CarMarquee from '@/components/ui/Marquee/Marquee';
 import ContactMenu from '@/components/ContactMenu/ContactMenu';
+import Footer from './Footer/Footer';
+import OurServices from './Components/OurServices/OurServices';
 
 export default function Home() {
   return (
     <div className="  h-screen w-full ">
       <Hero />
       <Rentax/>
+      <OurServices/>
       <RentalCars/>
       <LuxuryCar/>
       <RentalCarsTypes/>
@@ -27,8 +30,9 @@ export default function Home() {
       <ClientsSay/> 
       <LatestNews/>
       <CarPromo/>
-      {/* <CarMarquee/> */}
-      {/* <ContactMenu/> */}
+      <CarMarquee/>
+      <ContactMenu/> 
+      {/* <Footer/> */}
     </div>
   );
 }

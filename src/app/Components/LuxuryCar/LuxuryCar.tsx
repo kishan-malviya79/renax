@@ -20,7 +20,7 @@ interface CarDetails {
 const LuxuryCar: React.FC = () => {
   return (
     <div className="bg-red-600 text-white overflow-hidden w-full">
-      <div className="w-full h-screen bg-[#1b1b1b]">
+      <div className="w-full  h-screen bg-[#1b1b1b]">
         <div className="w-full pt-28 pb-12 sm:py-28">
           <div className="relative items-center justify-center text-white flex sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
             <div className="items-center flex justify-center flex-col gap-4">

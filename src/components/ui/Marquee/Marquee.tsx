@@ -31,12 +31,12 @@ const HomePage = () => {
   return (
     <div className="bg-[#222222] py-5  ">
 
-    <div className=' relative items-center justify-center content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+    <div className=' relative items-center justify-center content-center  text-white flex   sm:px-36 w-full md:w-[1440px] mx-auto md:py-0'>
 
     <div className="flex flex-col  items-center justify-center  ">
       <div className="overflow-hidden w-full">
         {/* Render the duplicated list of car logos */}
-        <div className="flex space-x-14 animate-marquee ">
+        <div className="flex space-x-1   animate-marquee ">
           {duplicatedCarLogos.map((logo, index) => (
             <img key={index} src={`/${logo}`} alt={`Car Logo ${index + 1}`} className="h-[95px]" />
           ))}

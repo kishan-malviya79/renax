@@ -75,15 +75,23 @@
   },
 ];
 
- export const carTypes = [
-  { src: '/03.jpg', title: 'Luxury Cars' },
-  { src: '/04.jpg', title: 'Sport Cars' },
-  { src: '/02.jpg', title: 'SUV' },
-  { src: '/01.jpg', title: 'Convertible' },
-  { src: '/05.jpg', title: 'Sedan' },
-  { src: '/06.jpg', title: 'Small Cars' },
+export const carTypes = [
+ { src: '/03.jpg', title: 'Luxury Cars' },
+ { src: '/04.jpg', title: 'Sport Cars' },
+ { src: '/02.jpg', title: 'SUV' },
+ { src: '/01.jpg', title: 'Convertible' },
+ { src: '/05.jpg', title: 'Sedan' },
+ { src: '/06.jpg', title: 'Small Cars' },
 ];
- export const carNews = [
+export const OurS = [
+ { src: '/man.jpg', title: ' Corporate Car Rental ' },
+ { src: '/2 (1).jpg', title: ' Car Rental with Driver ' },
+ { src: '/3 (1).jpg', title: ' Fleet Leasing ' },
+ { src: '/5.jpg', title: ' Airport Transfer ' },
+ { src: '/f2.jpg', title: ' VIP Transfer ' },
+ { src: '/6 (1).jpg', title: ' Private Transfer' },
+];
+export const carNews = [
   { src: '/GreenCar.jpg', title: 'Rental', p:'Document Required for car rental' },
   { src: '/04(1).jpg', title: 'SPORT CARS', p:'Rental cost of sport and other cars' },
   { src: '/blackcar.jpg', title: 'FINES', p:'Rental car how to check driving fines?' },
