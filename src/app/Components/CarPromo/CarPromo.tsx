@@ -7,17 +7,19 @@ function RentalCars1() {
   return (
     <div className="w-full bg-fixed relative">
       <div
-        className="w-full  bg-fixed bg-cover bg-center bg-no-repeat relative"
+        className="w-full  sm:bg-fixed bg-cover sm:bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `url(${`bugatti.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
+          backgroundImage: `url(${`bugatti1.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Black overlay */}
         <div className="relative w-full py-28">
-          <div className="relative items-center justify-center text-white flex flex-col px-36 w-full md:w-[1440px] mx-auto md:py-0">
+          
+          <div className="relative items-center justify-center text-white flex flex-col sm:px-36 md:px-24  w-full md:w-[1440px] mx-auto md:py-0">
+            
             <div className="items-center flex flex-col gap-4">
               <h5 className="text-[#f5b754] tracking-[6px] text-[10px]">EXPLORE</h5>
-              <h1 className="font-Outfit font-bold text-[35px]">
+              <h1 className="font-Outfit font-bold    text-[30px] sm:text-[35px]">
                 Car <span className="text-[#f5b754]">Promo</span> Video
               </h1>
               <div className="w-full flex gap-3 items-center justify-center rounded-full">

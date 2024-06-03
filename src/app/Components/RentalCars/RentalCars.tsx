@@ -19,10 +19,10 @@ import { PhoneCall } from 'lucide-react';
 function RentalCars() {
   return (
 
-    <div className="w-full bg-fixed relative ">
-      <div className="w-full bg-fixed   "
+    <div className="w-full relative ">
+      <div className="w-full sm:bg-fixed   "
         style={{
-          backgroundImage: `url(${`o.jpg`})`, // Replace BgOverview with your actual variable name for the background image
+          backgroundImage: `url(${`odi2.jpg`})`, // Replace BgOverview with your actual variable name for the background image
           backgroundSize: 'cover', // Adjust as needed
           backgroundPosition: 'center',
           backgroundRepeat: "no-repeat",
@@ -34,7 +34,7 @@ function RentalCars() {
 
           <div className=' relative items-center  justify-center content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
             <div className="  items-center flex flex-col gap-4">
-              <h5 className=' size-5 relative right-3 w-[18ch] text-[#f5b754] tracking-[6px] text-[12px]'> RENT NOW</h5>
+              <h5 className=' size-5 relative sm:right-3 w-[18ch] text-[#f5b754] tracking-[6px] text-[12px]'> RENT NOW</h5>
               <h1 className=' font-Outfit, font-bold  text-[35px]'>Book Auto Rental</h1>
               <div className=" w-[356px] sm:w-full  bg-[#222] gap-3  flex flex-col  h-[492px] sm:h-auto  sm:flex-row  px-6 py-6 items-center rounded-3xl sm:rounded-full ">
                 <Menubar className=' gap-8 sm:gap-6 flex flex-col  h-[400px] sm:h-auto w-full sm:flex-row' >
