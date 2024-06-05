@@ -38,7 +38,7 @@ function CarRentalProcess() {
                             </div>
                             <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
                                 <div className='absolute content-center  top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                                    <p className="font-Outfit font-bold text-white  text-[15px]">01.</p>
+                                    <p className=" relative bottom-3 font-Outfit font-bold text-white  text-[15px]">01.</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ function CarRentalProcess() {
                             </div>
                             <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
                                 <div className='absolute content-center top-[15px] left-0 h-1 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                                    <p className="font-Outfit font-bold text-white  text-[15px]">02.</p>
+                                    <p className="  relative bottom-3 font-Outfit font-bold text-white  text-[15px]">02.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function CarRentalProcess() {
                             </div>
                             <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
                                 <div className='absolute content-center top-[15px] left-0 h-8 px-4 py-7 bg-[#222222]  rounded-[65px]'>
-                                    <p className="font-Outfit font-bold text-white   text-[15px]">03.</p>
+                                    <p className="  relative bottom-3 font-Outfit font-bold text-white   text-[15px]">03.</p>
                                 </div>
                             </div>
                         </div>
