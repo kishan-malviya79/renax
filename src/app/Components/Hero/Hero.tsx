@@ -96,8 +96,9 @@ function Hero() {
                         }}>
                                                    <div className=' items-center  content-center h-screen text-white flex px-4  lg:px-36    w-full md:w-[1440px] mx-auto md:py-10'>
 
-
+                            
                             <div className=" flex flex-col  sm:gap-5 gap-2">
+                                
                                 <h5 className=' text-[#f5b754] tracking-[6px] text-[12px]'> <span>*</span> PREMIUM</h5>
                                 <h1 className='font-Outfit font-bold leading-10 text-[30px] sm:text-[90px]'>Rental Car</h1>
                                 <div className="flex gap-4">

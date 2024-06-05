@@ -32,7 +32,7 @@ export default function Home() {
       <CarPromo/>
       <CarMarquee/>
       <ContactMenu/> 
-      {/* <Footer/> */}
+      <Footer/> 
     </div>
   );
 }

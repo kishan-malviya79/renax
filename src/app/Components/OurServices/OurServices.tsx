@@ -53,7 +53,6 @@ function OurServices() {
         <div className="w-full pb-20  bg-[#1b1b1b]">
             <div className="w-full">
           <div className="relative items-center justify-center text-white gap-8 flex flex-col  sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
-
                     <span className='w-[1px] flex items-center justify-center bg-[#f5b754] mb-20 h-12'></span>
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
@@ -90,7 +89,6 @@ function OurServices() {
                                     
                                     className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
                                 />
-                              
                             </label>
                         </div>
                        
