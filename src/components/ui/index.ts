@@ -84,12 +84,12 @@ export const carTypes = [
  { src: '/06.jpg', title: 'Small Cars' },
 ];
 export const OurS = [
- { src: '/man.jpg', title: ' Corporate Car Rental ' },
- { src: '/2 (1).jpg', title: ' Car Rental with Driver ' },
- { src: '/3 (1).jpg', title: ' Fleet Leasing ' },
- { src: '/5.jpg', title: ' Airport Transfer ' },
- { src: '/f2.jpg', title: ' VIP Transfer ' },
- { src: '/6 (1).jpg', title: ' Private Transfer' },
+ { src: '/man.jpg', title: ' Corporate Car Rental ', num: '01' },
+ { src: '/2 (1).jpg', title: ' Car Rental with Driver', num: '02' },
+ { src: '/3 (1).jpg', title: ' Fleet Leasing ', num: '03' },
+ { src: '/5.jpg', title: ' Airport Transfer ', num: '04' },
+ { src: '/f2.jpg', title: ' VIP Transfer ' , num: '05'},
+ { src: '/6 (1).jpg', title: ' Private Transfer', num: '06' },
 ];
 export const carNews = [
   { src: '/GreenCar.jpg', title: 'Rental', p:'Document Required for car rental' },

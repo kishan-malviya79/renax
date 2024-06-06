@@ -42,7 +42,7 @@ function Rentax() {
             width="500"
             className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:scale-110  "
           />
-          <div className=" absolute bottom-0 left-0 bg-black w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
+          <div className=" absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
             <Button className='absolute top-[15px] left-0  h-8 px-6 py-6 bg-transparent border-[#f5b754] border hover:bg-[#f5b754] rounded-[50px]   '>
               <Play className="text-white" />

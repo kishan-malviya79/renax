@@ -10,9 +10,10 @@ import React, { useState } from 'react'
 interface OurS {
     src: string;
     title: string;
+    num: string;
 }
 
-function CarouselItemComponent({ src, title }: OurS) {
+function CarouselItemComponent({ src, title, num }: OurS) {
     return (
         <CarouselItem className="md:basis-1/2 text-white lg:basis-1/3">
             <div className="flex relative">
@@ -28,11 +29,11 @@ function CarouselItemComponent({ src, title }: OurS) {
                         <h1 className='font-Outfit font-bold w-[10ch] text-[20px]'>{title}</h1>
                     </div>
                 </div>
-                <div className="absolute bottom-0 -left-1 sm:left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
-                    <Button className='absolute top-[15px] left-0 h-8 px-6 py-6 bg-transparent border-[#f5b754] border hover:bg-[#f5b754] rounded-[50px]'>
-                        <ArrowUpRight className="text-white" />
-                    </Button>
-                </div>
+                <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
+                                <div className='absolute content-center  top-[15px] left-0 h-1 px-5 py-7 bg-[#222222]  rounded-[65px]'>
+                                    <p className=" relative bottom-3 font-Outfit font-bold text-white  text-[15px]">{num}</p>
+                                </div>
+                            </div>
             </div>
         </CarouselItem>
     );
@@ -63,7 +64,7 @@ function OurServices() {
                     <Carousel opts={{ align: "start" }} className='w-full'>
                             <CarouselContent className="-ml-1">
                                 {getVisibleCars().map((car, index) => (
-                                    <CarouselItemComponent key={index} src={car.src} title={car.title} />
+                                    <CarouselItemComponent key={index} src={car.src} title={car.title} num={car.num} />
                                 ))}
                             </CarouselContent>
                         </Carousel>
