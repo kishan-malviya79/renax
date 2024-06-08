@@ -40,7 +40,7 @@ function Rentax() {
             alt="jordans"
             height="500"
             width="500"
-            className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:scale-110  "
+            className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100 "
           />
           <div className=" absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
