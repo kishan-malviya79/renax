@@ -20,14 +20,16 @@ import { useRouter } from "next/navigation";
 function Nav() {
   const router = useRouter();
   return (
-    <div className="  bg-transparent  w-full  py-2 sm:py-6">
-      <div className=" items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
+    <div className="   bg-transparent  w-full  py-2 sm:py-6">
+      <div className="  top-10 items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
         <Image
           src={`/Renax-logo.png`}
           alt="jordans"
           height="120"
           width="120"
-          className="object-contain  "
+          className="object-contain  "onClick={() => {
+            router.push("/");
+          }}
         />
         <Menu className="  sm:hidden "/>
         <div className="sm:flex    hidden gap-10">
@@ -54,7 +56,7 @@ function Nav() {
             </MenubarMenu>
             <MenubarMenu>
               <MenubarTrigger onClick={() => {
-              router.push("/allmenu");
+              router.push("/allmenuAbout");
             }}>About </MenubarTrigger>
             </MenubarMenu>
             <MenubarMenu>
@@ -99,7 +101,9 @@ function Nav() {
               </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-              <MenubarTrigger>Contact</MenubarTrigger>
+              <MenubarTrigger onClick={() => {
+              router.push("/Contact");
+            }}>Contact</MenubarTrigger>
             </MenubarMenu>
 
           </Menubar>

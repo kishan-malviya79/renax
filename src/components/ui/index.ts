@@ -99,6 +99,13 @@ export const carNews = [
   { src: '/01(1).jpg', title: 'RULES', p:'Penalties for violating the ruels in rental cars ' },
   { src: '/bugatti.jpg', title: 'RENTAL Cars', p:'How to check a before reting? ' },
 ];
+export const ConMails = [
+  { src: '<Mail/>', title: 'Email Us', p:'info@renax.com ' },
+  { src: '/blackcar.jpg', title: 'Our address', p:'Dubai, Water Tower, Office 123' },
+  { src: '/04(1).jpg', title: 'Opening Hours', p:'Mon-Sun: 8 AM - 7 PM' },
+  { src: '/o.jpg', title: 'Call Us', p:' +971 52-333-4444' },
+ 
+];
 // export const LuxuryCarData = [
 //     {
 //       id: 1,

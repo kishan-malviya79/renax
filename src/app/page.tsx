@@ -15,7 +15,7 @@ import CarMarquee from '@/components/ui/Marquee/Marquee';
 import ContactMenu from '@/components/ContactMenu/ContactMenu';
 import Footer from './Footer/page';
 import OurServices from './Components/OurServices/OurServices';
-import AllMenuBar from '@/app/allmenu/page';
+import AllMenuBar from '@/app/allmenuAbout/page';
 
 export default function Home() {
   return (
@@ -34,7 +34,6 @@ export default function Home() {
       <CarMarquee/>
       <ContactMenu/> 
       <Footer/> 
-    <AllMenuBar/>  
     </div>
   );
 }
