@@ -1,3 +1,4 @@
+"use client"
 import {
   Menubar,
   MenubarContent,
@@ -11,10 +12,13 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 import Image from "next/image"
-import { Menu, PhoneCall } from 'lucide-react';
+import { ChevronDown, Menu, PhoneCall } from 'lucide-react';
+import { useRouter } from "next/navigation";
+
 
 
 function Nav() {
+  const router = useRouter();
   return (
     <div className="  bg-transparent  w-full  py-2 sm:py-6">
       <div className=" items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
@@ -26,10 +30,10 @@ function Nav() {
           className="object-contain  "
         />
         <Menu className="  sm:hidden "/>
-        <div className="sm:flex  hidden gap-6">
-          <Menubar >
+        <div className="sm:flex    hidden gap-10">
+          <Menubar className=" gap-4 flex" >
             <MenubarMenu>
-              <MenubarTrigger>Home</MenubarTrigger>
+              <MenubarTrigger>Home <ChevronDown className=" size-[16px]"/></MenubarTrigger>
                <MenubarContent>
                 <MenubarItem>
                   Slider
@@ -49,10 +53,15 @@ function Nav() {
               </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-              <MenubarTrigger>About</MenubarTrigger>
+              <MenubarTrigger onClick={() => {
+              router.push("/allmenu");
+            }}>About </MenubarTrigger>
             </MenubarMenu>
             <MenubarMenu>
-              <MenubarTrigger>Cars</MenubarTrigger>
+            <MenubarMenu>
+              <MenubarTrigger>Services<ChevronDown className=" size-[16px]"/></MenubarTrigger>
+            </MenubarMenu>
+              <MenubarTrigger>Cars<ChevronDown className=" size-[16px]"/></MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>Car Grid</MenubarItem>
                 <MenubarItem>Car Listing</MenubarItem>
@@ -62,11 +71,9 @@ function Nav() {
                 <MenubarItem>Car Details 02</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
+            
             <MenubarMenu>
-              <MenubarTrigger>Services</MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarTrigger>Pages</MenubarTrigger>
+              <MenubarTrigger>Pages<ChevronDown className=" size-[16px]"/></MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>
                   Team
@@ -81,7 +88,7 @@ function Nav() {
               </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-              <MenubarTrigger>Blog</MenubarTrigger>
+              <MenubarTrigger>Blog<ChevronDown className=" size-[16px]"/></MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>
                   Blog Grid

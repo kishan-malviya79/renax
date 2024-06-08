@@ -13,8 +13,9 @@ import LatestNews from './Components/LatestNews/LatestNews';
 import CarPromo from './Components/InterestedReting/InterestedReting';
 import CarMarquee from '@/components/ui/Marquee/Marquee';
 import ContactMenu from '@/components/ContactMenu/ContactMenu';
-import Footer from './Footer/Footer';
+import Footer from './Footer/page';
 import OurServices from './Components/OurServices/OurServices';
+import AllMenuBar from '@/app/allmenu/page';
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <CarMarquee/>
       <ContactMenu/> 
       <Footer/> 
+    <AllMenuBar/>  
     </div>
   );
 }
