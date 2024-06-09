@@ -6,8 +6,6 @@ import React, { useState } from 'react'
 
 
 
-
-
 function Footer() {
     return (
         <div className="bg-[#1b1b1b]  ">

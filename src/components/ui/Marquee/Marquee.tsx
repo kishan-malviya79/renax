@@ -2,6 +2,7 @@
 if (typeof window !== 'undefined') {
  
 }
+import Image from 'next/image';
 import React from 'react';
 
 // Import Marquee component
@@ -38,7 +39,7 @@ const HomePage = () => {
         {/* Render the duplicated list of car logos */}
         <div className="flex space-x-1   animate-marquee ">
           {duplicatedCarLogos.map((logo, index) => (
-            <img key={index} src={`/${logo}`} alt={`Car Logo ${index + 1}`} className="h-[95px]" />
+            <Image key={index} src={`/${logo}`} alt={`Car Logo ${index + 1}`} className="h-[95px]" />
           ))}
         </div>
         </div>

@@ -1,5 +1,5 @@
 
-import Footer from '@/app/Footer/Footer'
+import Footer from '@/app/Footer/page'
 import { Mail, MapPin, PhoneCall } from 'lucide-react'
 import React from 'react'
 
