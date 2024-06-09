@@ -39,7 +39,7 @@ const HomePage = () => {
         {/* Render the duplicated list of car logos */}
         <div className="flex space-x-1   animate-marquee ">
           {duplicatedCarLogos.map((logo, index) => (
-            <Image key={index} src={`/${logo}`} alt={`Car Logo ${index + 1}`} className="h-[95px]" />
+            <Image key={index} src={`/${logo}`} alt={`Car Logo ${index + 1}`} width={200} height={100} className="h-[95px]" />
           ))}
         </div>
         </div>
