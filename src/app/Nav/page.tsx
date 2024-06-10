@@ -14,14 +14,22 @@ import {
 import Image from "next/image"
 import { ChevronDown, Menu, PhoneCall } from 'lucide-react';
 import { useRouter } from "next/navigation";
+import Router from 'next/router';
+import { useState } from "react";
+
 
 
 
 function Nav() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   const router = useRouter();
   return (
-    <div className="   bg-transparent  w-full  py-2 sm:py-6">
-      <div className="  top-10 items-start sm:items-center justify-between  text-white flex gap-24 py-6 px-4 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0 ">
+    <div className="   bg-transparent   w-full  py-2  sm:py-6">
+      <div className="  top-10  items-center  lg:items-center justify-between  text-white flex gap-24 py-6 px-4 md:px-3 lg:px-36  w-full  lg:w-[1440px] mx-auto md:py-0 ">
         <Image
           src={`/Renax-logo.png`}
           alt="jordans"
@@ -31,11 +39,17 @@ function Nav() {
             router.push("/");
           }}
         />
-        <Menu className="  sm:hidden "/>
-        <div className="sm:flex    hidden gap-10">
-          <Menubar className=" gap-4 flex" >
+       <div className="text-white">
+        <div className="menu-icon cursor-pointer" onClick={toggleMenu}>
+          <span className="block h-1 w-6 bg-white mb-1"></span>
+          <span className="block h-1 w-6 bg-white mb-1"></span>
+          <span className="block h-1 w-6 bg-white mb-1"></span>
+        </div>
+        {showMenu && (
+          <div className="menu absolute top-[72px] left-0 sm:right-4 w-full h-[340px] bg-[#222222] p-4  z-10">
+            <Menubar className=" gap-4 sm:flex-row relative items-start justify-start lg:flex-row  md:flex-col flex-col flex" >
             <MenubarMenu>
-              <MenubarTrigger>Home <ChevronDown className=" size-[16px]"/></MenubarTrigger>
+              <MenubarTrigger>Home <ChevronDown className=" size-[16px]"/></MenubarTrigger> 
                <MenubarContent>
                 <MenubarItem>
                   Slider
@@ -107,7 +121,9 @@ function Nav() {
             </MenubarMenu>
 
           </Menubar>
-          <div className="sm:flex text-white justify-between hidden h-10  gap-4">
+          </div>
+        )}
+          <div className="lg:flex md:hidden text-white justify-between hidden h-10  lg:gap-4">
 
             <div className=" border-[1px] rounded-[50%] px-2 py-2 border-[#f5b754] justify-center items-center flex ">
               <PhoneCall />
@@ -121,6 +137,7 @@ function Nav() {
 
         </div>
       </div>
+      
     </div>
   )
 }

@@ -1,7 +1,10 @@
+"use client"
 import React from 'react'
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, LucideAlignEndVertical } from 'lucide-react'
+import { useState } from 'react';
+
 import {
     Carousel,
     CarouselContent,
@@ -10,10 +13,11 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Nav from '@/app/Nav/page'
+// import Navbar from '@/app/Navbar/Navbar'
 function Hero() {
     return (
         <div className=" w-full overflow-x-hidden bg-[#1b1b1b] " >
-
+                {/* <Navbar/> */}
             <Nav />
 
             <Carousel>
@@ -82,7 +86,7 @@ function Hero() {
                                             Rent Now  <ArrowUpRight className="mr-2 h-4 w-4" />
                                         </Button>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     </CarouselItem>
