@@ -32,7 +32,7 @@ const HomePage = () => {
   return (
     <div className="bg-[#222222] py-5  ">
 
-    <div className=' relative items-center justify-center content-center  text-white flex   sm:px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+    <div className=' relative items-center justify-center content-center  text-white flex md:px-16   lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0'>
 
     <div className="flex flex-col  items-center justify-center  ">
       <div className="overflow-hidden w-full">

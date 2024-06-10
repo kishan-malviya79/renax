@@ -11,9 +11,9 @@ function CarRentalProcess() {
 
 
     return (
-        <div className="w-full sm:h-[80%]  bg-[#1b1b1b]">
+        <div className="w-full lg:h-[80%]  bg-[#1b1b1b]">
             <div className="w-full  ">
-                <div className='relative items-center  gap-8 top-28  flex-col text-white flex px- w-full     lg:w-[1440px] mx-auto md:py-0'>
+                <div className='relative items-center  gap-8 top-28  flex-col text-white flex    w-full     lg:w-[1440px] mx-auto md:py-0'>
                     <span className='w-[1px] flex items-center justify-center bg-[#f5b754] h-12'></span>
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
@@ -26,9 +26,9 @@ function CarRentalProcess() {
                         </div>
                     </div>
                     <div className="md:basis-1/2  flex flex-col sm:flex-row  gap-6 text-white lg:basis-1/3">
-                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 md:h-[320px] h-60  lg:h-60 w-90 relative">
                             <p className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Choose A Car</p>
-                            <p className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">View our range of cars, find your perfect car for the coming days.</p>
+                            <p className="object-contain text-[12px] md:w-[14ch] w-[34ch] lg:w-[34ch] md:leading-7 lg:leading-5 opacity-60  text-white ">View our range of cars, find your perfect car for the coming days.</p>
                             <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
                             </div>
                             <div className="absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tr-[40px]">
@@ -37,9 +37,9 @@ function CarRentalProcess() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 md:h-[320px] h-60  lg:h-60  w-90 relative">
                             <p className="font-Outfit font-bold text-white w-[13ch] text-[20px]">Come In Contact</p>
-                            <p className="object-contain text-[12px] w-[34ch]  opacity-60  text-white ">Our advisor team is ready to help you with the booking process or any questions.</p>
+                            <p className="object-contain text-[12px] md:w-[18ch] w-[34ch] lg:w-[34ch] md:leading-7 lg:leading-5  opacity-60  text-white ">Our advisor team is ready to help you with the booking process or any questions.</p>
                             <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
                             </div>
@@ -49,9 +49,9 @@ function CarRentalProcess() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 h-60 w-90 relative">
+                        <div className="flex flex-col bg-[#222222] rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl p-14 gap-4 pl-12 md:h-[320px] h-60  lg:h-60  w-90 relative">
                             <p className="font-Outfit font-bold text-white w-[10ch] text-[20px]">Enjoy Driving</p>
-                            <p className="object-contain text-[12px] w-[34ch] opacity-60  text-white ">Receive the key and enjoy your car. We treat all our cars with respect.</p>
+                            <p className="object-contain text-[12px] md:w-[18ch] w-[34ch] lg:w-[34ch] md:leading-7 lg:leading-5 opacity-60  text-white ">Receive the key and enjoy your car. We treat all our cars with respect.</p>
                             <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
                             </div>

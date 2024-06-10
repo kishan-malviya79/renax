@@ -9,8 +9,8 @@ import React, { useState } from 'react'
 function Footer() {
     return (
         <div className="bg-[#1b1b1b]  ">
-            <div className=' relative items-start  justify-start content-center gap-28  text-white flex flex-col px-3   sm:px-36 w-full md:w-[1440px] mx-auto md:py-0'>
-                <div className=" w-full flex flex-col sm:flex-row  gap-32  sm:gap-6    sm:items-center justify-between rounded-2xl ">
+            <div className=' relative items-start  justify-start content-center gap-28  text-white flex flex-col px-3  md:px-20 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0'>
+                <div className=" w-full flex flex-col sm:flex-row  gap-32  md:gap-16 lg:gap-6  md:items-start   lg:items-center justify-between rounded-2xl ">
                     <div className="flex ">
                         <div className=" flex  justify-between flex-col gap-6   ">
                             <Image
@@ -20,7 +20,7 @@ function Footer() {
                                 width="140"
                                 className="object-contain  "
                             />
-                            <p className="object-contain text-[13px] leading-8 sm:w-[45ch] opacity-80  text-white ">Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</p>
+                            <p className="object-contain text-[13px] leading-8 md:w-[25ch] lg:w-[45ch] opacity-80  text-white ">Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</p>
                             <div className="flex  gap-2">
                                 <div className=" border-[1px] rounded-[50%] px-3 py-3 border-[#f5b754]   justify-center items-center flex ">
                                     <MessageCircle className=' size-[17px]' />
@@ -35,7 +35,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col  items-start  justify-start gap-8">
-                        <h1 className='font-Outfit font-bold w-full  text-[20px]'>Quick Links</h1>
+                        <h1 className='font-Outfit font-bold w-full md:w-[9ch]  text-[20px]'>Quick Links</h1>
                         <ul className=' text-[#f5b754] list-disc justify-cente flex flex-col gap-2 relative left-4	'   >
                             <li className=' text-[14px] opacity-90 text-[#f5b754]'> <a className='text-white' href="Contact">About</a></li>
                             <li className=' text-[14px] opacity-90text-[#f5b754]'> <a className='text-white' href="Contact">Car</a></li>
@@ -48,7 +48,7 @@ function Footer() {
                         <div className=" flex  justify-between flex-col gap-6   ">
                             <h1 className='font-Outfit font-bold w-full text-[20px]'>Subscribe</h1>
 
-                            <p className="object-contain text-[13px] leading-8 sm:w-[50ch] opacity-80  text-white ">Want to be notified about our services. Just sign up and we'll send you a notification by email.
+                            <p className="object-contain text-[13px] leading-8  lg:w-[50ch] opacity-80  text-white ">Want to be notified about our services. Just sign up and we'll send you a notification by email.
 
                             </p>
                             <div className="flex   gap-2">

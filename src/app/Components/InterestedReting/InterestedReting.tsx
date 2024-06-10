@@ -14,7 +14,7 @@ function CarPromo() {
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div> {/* Black overlay */}
                 <div className="relative w-full py-28">
-                    <div className="relative items-center justify-center text-white flex flex-col px-36 w-full md:w-[1440px] mx-auto md:py-0">
+                    <div className="relative items-center justify-center text-white flex flex-col px-36 w-full lg:w-[1440px] mx-auto md:py-0">
                         <div className="items-center flex flex-col gap-4">
                             <h5 className="text-[#f5b754] tracking-[6px] text-[10px]">RENT YOUR CAR</h5>
                             <h1 className="font-Outfit font-bold   sm:text-[35px] text-[30px]">

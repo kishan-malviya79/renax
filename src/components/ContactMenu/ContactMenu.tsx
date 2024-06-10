@@ -6,7 +6,7 @@ import React from 'react'
 function ContactMenu() {
     return (
         <div className="bg-[#1b1b1b] ">
-            <div className=' relative items-center  justify-center content-center  text-white flex px-3   sm:px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+            <div className=' relative items-center  justify-center content-center  text-white flex px-3 md:px-20  lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0'>
                 <div className=" w-full flex flex-col sm:flex-row bg-[#222]  sm:border-0 border-[.5px] my-28 gap-6  px-6 py-6 sm:items-center justify-between rounded-2xl ">
                     <div className="flex gap-4 items-center ">
                         <div className=' px-5 py-5 bg-[#f5b754]  rounded-[65px] '>
