@@ -15,14 +15,14 @@ interface OurS {
 
 function CarouselItemComponent({ src, title, num }: OurS) {
     return (
-        <CarouselItem className="md:basis-1/2 text-white lg:basis-1/3">
+        <CarouselItem className="md:basis-1/2       text-white lg:basis-1/3">
             <div className="flex relative">
                 <Image
                     src={src}
                     alt={title}
                     height="500"
                     width="500"
-                    className="object-contain relative right-1 sm:right-0   rounded-2xl w-[360px]  sm:w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100"
+                    className="object-contain relative right-1 sm:right-0   rounded-2xl w-[360px]  md:w-[530px] lg:w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100"
                 />
                 <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
                     <div className='absolute top-[1px] left-0 h-8 px-6 py-6 bg-transparent text-white'>
@@ -53,7 +53,7 @@ function OurServices() {
     return (
         <div className="w-full pb-20  bg-[#1b1b1b]">
             <div className="w-full">
-          <div className="relative items-center justify-center text-white gap-8 flex flex-col  sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
+          <div className="relative items-center justify-center text-white gap-8 flex flex-col  lg:px-36 w-full md:w-[720px] lg:w-[1440px] mx-auto md:py-0">
                     <span className='w-[1px] flex items-center justify-center bg-[#f5b754] mb-20 h-12'></span>
                     <div className="">
                         <div className="items-center flex justify-center flex-col gap-4">
