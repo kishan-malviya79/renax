@@ -32,12 +32,12 @@ function RentalCars() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="  w-full py-28 " >
 
-          <div className=' relative items-center  justify-center content-center  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+          <div className=' relative items-center  justify-center content-center  text-white flex   lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0'>
             <div className="  items-center flex flex-col gap-4">
               <h5 className=' size-5 relative sm:right-3 w-[18ch] text-[#f5b754] tracking-[6px] text-[12px]'> RENT NOW</h5>
               <h1 className=' font-Outfit, font-bold  text-[35px]'>Book Auto Rental</h1>
-              <div className=" w-[356px] sm:w-full  bg-[#222] gap-3  flex flex-col  h-[492px] sm:h-auto  sm:flex-row  px-6 py-6 items-center rounded-3xl sm:rounded-full ">
-                <Menubar className=' gap-8 sm:gap-6 flex flex-col  h-[400px] sm:h-auto w-full sm:flex-row' >
+              <div className=" w-[356px] md:w-full lg:w-full     bg-[#222] gap-3  flex flex-col  h-[492px] sm:h-auto  sm:flex-row  px-6 py-6 items-center rounded-3xl lg:rounded-full ">
+                <Menubar className=' gap-8 sm:gap-6   flex flex-col  h-[400px] lg:h-auto w-full md:flex-col lg:flex-row' >
                   <MenubarMenu  >
                     <MenubarTrigger className=' w-full  px-2 sm:px-0 relative sm:w-[17ch]   justify-between flex ' >Choose Car Type <ChevronDown className=' size-5 relative  text-[#f5b754] ' />  </MenubarTrigger>
                     <MenubarContent className='  w-[320px] right-2 relative sm:w-full  '>
@@ -79,7 +79,7 @@ function RentalCars() {
                     </MenubarContent>
                   </MenubarMenu>
                   <span className='w-[1px] bg-white h-16 opacity-20'></span>
-
+                  
                   <MenubarMenu>
                     <MenubarTrigger className=' w-full  px-2 sm:px-0 relative sm:w-[17ch]   justify-between flex'>Drop Of Location<ChevronDown className=' size-5 relative text-[#f5b754] ' /></MenubarTrigger>
                     <MenubarContent className='  w-[320px] right-2 relative sm:w-full  '>

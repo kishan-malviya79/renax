@@ -15,7 +15,7 @@ interface OurS {
 
 function CarouselItemComponent({ src, title, num }: OurS) {
     return (
-        <CarouselItem className="md:basis-1/2       text-white lg:basis-1/3">
+        <CarouselItem className="md:basis-1/2      text-white lg:basis-1/3">
             <div className="flex relative">
                 <Image
                     src={src}
