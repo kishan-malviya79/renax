@@ -35,7 +35,7 @@ function Rentax() {
           <Image
             src={`/about.jpg`}
             alt="jordans"
-            height="500"
+            height="500"  
             width="500"
             className="object-contain rounded-tl-3xl rounded-tr-3xl w-[360px]  md:w-[720px] lg:w-[500px] rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100 "
           />

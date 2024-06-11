@@ -21,22 +21,22 @@ interface ContactItem {
 const contactItems: ContactItem[] = [
     {
 
-        src: <Mail className="text-[#f5b754] size-10" />,
+        src: <Mail className="text-[#f5b754 hover:text-black size-10" />,
         title: 'Email us',
         p: 'info@renax.com',
     },
     {
-        src: <MapPin className="text-[#f5b754] size-10" />,
+        src: <MapPin className=" size-10" />,
         title: 'Our address',
         p: 'Dubai, Water Tower, Office 123',
     },
     {
-        src: <Timer className="text-[#f5b754] size-10" />,
+        src: <Timer className=" hover:text-black size-10" />,
         title: 'Opening Hours',
         p: 'Mon-Sun: 8 AM - 7 PM',
     },
     {
-        src: <Phone className="text-[#f5b754] size-10" />,
+        src: <Phone className="text-[#f5b754  hover:text-black size-10" />,
         title: 'Call us',
         p: '+971 52-333-4444',
     },
@@ -45,7 +45,7 @@ const contactItems: ContactItem[] = [
 const Contact: React.FC = () => {
     return (
         <div className="bg-[#1b1b1b] w-full ">
-            < Nav  />
+            < Nav />
             <div className="w-full  relative">
                 <div
                     className="w-full h-[450px] sm:h-[600px]  bg-cover bg-center  bg-no-repeat relative"
@@ -71,22 +71,24 @@ const Contact: React.FC = () => {
                 </div>
             </div>
 
-            <div className="items-start relative -top-7  right-3 sm:right-0  justify-start text-white flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0">
-                {contactItems.map((item, index) => (
-                    <div key={index} className="w-full relative -top-7 px-8 text-white py-16 rounded-2xl sm:items-center flex flex-row justify-between gap-3 sm:gap-0 bg-[#222] mx-3">
-                        <div className="flex flex-col gap-4">
-                            {item.src}
-                            <div className="flex flex-col gap-2">
-                                <h1 className="font-Outfit font-bold text-white text-[18px]">{item.title}</h1>
-                                <p className="text-[12px] opacity-50">{item.p}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+            <div className="items-start relative -top-7  right-3 sm:right-0  justify-start flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0">
+            {contactItems.map((item, index) => (
+        <div key={index} className={`w-full relative px-8 py-16 rounded-2xl sm:items-center flex flex-row justify-between gap-3 sm:gap-0 mx-3 transform   transition-transform ${index === 3 ? 'bg-[#f5b754] text-black hover:scale-110' : 'text-white hover:text-black bg-[#222] hover:bg-[#f5b754] hover:scale-110'}`}>
+            <div className="flex flex-col gap-4">
+                <div className="text-[#f5b75] hover:text-black">
+                    {item.src}
+                </div>
+                <div className="flex flex-col gap-2">
+                    <h1 className="font-Outfit font-bold text-[18px]">{item.title}</h1>
+                    <p className="text-[12px] opacity-50">{item.p}</p>
+                </div>
+            </div>
+        </div>
+    ))}
             </div>
             <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto lg:py-20">
 
-                <form className="flex  flex-col gap-5 left-4 relative sm:left-0  max-w-350px bg-[#1b1b1b] pl-0 pt-20 rounded-lg" >
+                <form className="flex  flex-col gap-5 left-4 relative sm:left-0  max    -w-350px bg-[#1b1b1b] pl-0 pt-20 rounded-lg" >
                     <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">Get In Touch</h1>
                     <div className="flex sm:flex-row flex-col  gap-6">
                         <label className="w-full relative">
@@ -103,7 +105,7 @@ const Contact: React.FC = () => {
                         <label className="w-full relative">
                             <input placeholder=" Your Number*" type="text" className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-80 px-2 sm:px-7 py-4 " />
                             <span className="absolute left-0  text-gray-500 text-sm transition-all">    </span>
-                        </label>    
+                        </label>
                         <label className="w-full relative">
                             <input placeholder="Subject*" type="text" className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-80 px-2 sm:px-7 py-4 " />
                             <span className="absolute left-0  text-gray-500 text-sm transition-all"></span>
@@ -125,11 +127,11 @@ const Contact: React.FC = () => {
                 <div className="flex flex-col gap-5  max-w-350px pl-0  lg:pb-0 pb-24 pt-20 bg-[#1b1b1b]  rounded-lg" >
                     <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">Traffic</h1>
                     <div
-                    className=" w-[356px] h-[350px] lg:w-[500px] lg:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
-                    style={{ 
-                        backgroundImage: `url(${`traffic.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
-                    }}
-                ></div>
+                        className=" w-[356px] h-[350px] lg:w-[500px] lg:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
+                        style={{
+                            backgroundImage: `url(${`traffic.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
+                        }}
+                    ></div>
                 </div>
             </div>
             <CarPromo />
