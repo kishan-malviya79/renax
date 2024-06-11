@@ -7,7 +7,7 @@ function RentalCars1() {
   return (
     <div className="w-full bg-fixed relative">
       <div
-        className="w-full  sm:bg-fixed bg-cover sm:bg-center bg-no-repeat relative"
+        className="w-full   lg:bg-fixed bg-cover sm:bg-center bg-no-repeat relative"
         style={{
           backgroundImage: `url(${`bugatti1.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
         }}

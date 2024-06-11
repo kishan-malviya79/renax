@@ -32,7 +32,7 @@ const LuxuryCar: React.FC = () => {
         <Carousel>
           <CarouselContent className="gap-6">
             {carDetails.map((car, index) => (
-              <CarouselItem key={index} className="md:basis-1/1 relative md:px-20 lg:px-0 text-white lg:basis-1/3">
+              <CarouselItem key={index} className="md:basis-1/1 relative md:px-32 lg:px-0 text-white lg:basis-1/3">
                 <Image
                   src={car.src}
                   alt={car.name}
