@@ -72,19 +72,19 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="items-start relative -top-7  right-3 sm:right-0  justify-start flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0">
-            {contactItems.map((item, index) => (
-        <div key={index} className={`w-full relative px-8 py-16 rounded-2xl sm:items-center flex flex-row justify-between gap-3 sm:gap-0 mx-3 transform   transition-transform ${index === 3 ? 'bg-[#f5b754] text-black hover:scale-110' : 'text-white hover:text-black bg-[#222] hover:bg-[#f5b754] hover:scale-110'}`}>
-            <div className="flex flex-col gap-4">
-                <div className="text-[#f5b75] hover:text-black">
-                    {item.src}
-                </div>
-                <div className="flex flex-col gap-2">
-                    <h1 className="font-Outfit font-bold text-[18px]">{item.title}</h1>
-                    <p className="text-[12px] opacity-50">{item.p}</p>
-                </div>
-            </div>
-        </div>
-    ))}
+                {contactItems.map((item, index) => (
+                    <div key={index} className={`w-full relative px-8 py-16 rounded-2xl sm:items-center flex flex-row justify-between gap-3 sm:gap-0 mx-3  hover:   animate-bounce ${index === 3 ? 'bg-[#f5b754] text-black hover:scale-110' : 'text-white hover:text-black bg-[#222] hover:bg-[#f5b754] hover:scale-110'}`}>
+                        <div className="flex flex-col gap-4">
+                            <div className="text-[#f5b75] hover:text-black">
+                                {item.src}
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <h1 className="font-Outfit font-bold text-[18px]">{item.title}</h1>
+                                <p className="text-[12px] opacity-50">{item.p}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
             <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto lg:py-20">
 
