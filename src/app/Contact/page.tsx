@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <div className="items-start relative   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto md:py-20">
+            <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto lg:py-20">
 
                 <form className="flex  flex-col gap-5 left-4 relative sm:left-0  max-w-350px bg-[#1b1b1b] pl-0 pt-20 rounded-lg" >
                     <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">Get In Touch</h1>

@@ -28,7 +28,7 @@ function Nav() {
   };
   const router = useRouter();
   return (
-    <div className="   bg-transparent   w-full  py-2  sm:py-6">
+    <div className="   bg-transparent   w-full  py-2  md:py-8 lg:py-6">
       <div className="  top-10  items-center  lg:items-center justify-between  text-white flex gap-24 py-6 px-4 md:px-3 lg:px-36  w-full  lg:w-[1440px] mx-auto md:py-0 ">
         <Image
           src={`/Renax-logo.png`}
@@ -40,14 +40,14 @@ function Nav() {
           }}
         />
        <div className="text-white">
-        <div className="menu-icon cursor-pointer" onClick={toggleMenu}>
+        <div className="menu-icon lg:hidden cursor-pointer" onClick={toggleMenu}>
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white mb-1"></span>
         </div>
         {showMenu && (
-          <div className="menu absolute top-[72px] left-0 sm:right-4 w-full h-[340px] bg-[#222222] p-4  z-10">
-            <Menubar className=" gap-4 sm:flex-row relative items-start justify-start lg:flex-row  md:flex-col flex-col flex" >
+          <div className="menu absolute top-[87px]  left-0 sm:right-4 w-full h-[340px] bg-[#222222] p-4  z-10">
+            <Menubar className="  gap-4 relative text-white items-start justify-start lg:flex-row  md:flex-col flex-col  flex" >
             <MenubarMenu>
               <MenubarTrigger>Home <ChevronDown className=" size-[16px]"/></MenubarTrigger> 
                <MenubarContent>
