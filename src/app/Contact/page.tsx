@@ -44,7 +44,7 @@ const contactItems: ContactItem[] = [
 
 const Contact: React.FC = () => {
     return (
-        <div className="bg-[#1b1b1b] ">
+        <div className="bg-[#1b1b1b] w-full ">
             < Nav  />
             <div className="w-full  relative">
                 <div
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                     <div className="relative w-full py-28">
 
                         {/* <div className=' items-center  content-center  text-white flex px-4  lg:px-36    w-full md:w-[1440px] mx-auto md:py-20'> */}
-                        <div className="relative items-center justify-center text-white flex flex-col py-24 sm:px-36 w-full md:w-[1440px] mx-auto md:py-20">
+                        <div className="relative items-center justify-center text-white flex flex-col py-24 sm:px-36 w-full lg:w-[1440px] mx-auto md:py-20">
                             <div className=" items-center  sm:items-start flex flex-col sm:gap-4">
                                 <h5 className="text-[#f5b754] tracking-[6px] text-[10px]">GET IN TOUCH</h5>
                                 <h1 className="font-Outfit font-bold   sm:text-[35px] text-[42px]">
@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
                 </div>
             </div>
 
-            <div className="items-start relative -top-7  right-3 sm:right-0  justify-start text-white flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 sm:px-36 w-full md:w-[1440px] mx-auto md:py-0">
+            <div className="items-start relative -top-7  right-3 sm:right-0  justify-start text-white flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0">
                 {contactItems.map((item, index) => (
                     <div key={index} className="w-full relative -top-7 px-8 text-white py-16 rounded-2xl sm:items-center flex flex-row justify-between gap-3 sm:gap-0 bg-[#222] mx-3">
                         <div className="flex flex-col gap-4">
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <div className="items-start relative   justify-between text-white flex  flex-col sm:flex-row sm:px-36 w-[356px] sm:w-full md:w-[1440px] mx-auto md:py-20">
+            <div className="items-start relative   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto md:py-20">
 
                 <form className="flex  flex-col gap-5 left-4 relative sm:left-0  max-w-350px bg-[#1b1b1b] pl-0 pt-20 rounded-lg" >
                     <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">Get In Touch</h1>
@@ -122,10 +122,10 @@ const Contact: React.FC = () => {
                         </Button>
                     </div>
                 </form>
-                <div className="flex flex-col gap-5  max-w-350px pl-0   sm:pb-0 pb-24 pt-20 bg-[#1b1b1b]  rounded-lg" >
+                <div className="flex flex-col gap-5  max-w-350px pl-0  lg:pb-0 pb-24 pt-20 bg-[#1b1b1b]  rounded-lg" >
                     <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">Traffic</h1>
                     <div
-                    className=" w-[356px] h-[350px] sm:w-[500px] sm:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
+                    className=" w-[356px] h-[350px] lg:w-[500px] lg:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
                     style={{ 
                         backgroundImage: `url(${`traffic.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
                     }}

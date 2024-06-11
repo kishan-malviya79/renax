@@ -19,7 +19,7 @@ import AllMenuBar from '@/app/allmenuAbout/page';
 
 export default function Home() {
   return (
-    <div className="  h-screen w-full ">
+    <div className=" bg-[#1b1b1b]  h-screen w-full ">
       <Hero />
       <Rentax/>
       <OurServices/>
