@@ -75,8 +75,8 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <>
-    <div className="flex  justify-between items-center py-4">
+    <div className="w-full px-20 mx-auto">
+    <div className=" flex  justify-between items-center py-4">
         <Input
           placeholder="Filter name..."
           onChange={(e) => table.setGlobalFilter(e.target.value) }
@@ -112,7 +112,7 @@ export function DataTable<TData, TValue>({
         </DropdownMenu> 
       </div>
 
-      <div className="rounded-md border">
+      <div className="rounded-md border w-full ">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -185,6 +185,6 @@ export function DataTable<TData, TValue>({
           Next
         </Button>
       </div>
-    </>
+    </div>
   );
 }

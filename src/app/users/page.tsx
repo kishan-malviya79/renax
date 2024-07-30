@@ -11,7 +11,7 @@ async function getUsers(): Promise<User[]>{
 export default async function page() {
     const data = await getUsers()
   return (
-    <div className='py-24 px-24'>
+    <div className='w-full py-20 items-center justify-center flex flex-col '>
         <h1 className='text-3xl  font-semibold '>React Table</h1>
         <DataTable columns={columns} data={data}/>
     </div>
