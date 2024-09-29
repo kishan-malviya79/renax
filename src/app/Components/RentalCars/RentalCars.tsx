@@ -25,7 +25,7 @@ function RentalCars() {
   return (
     <div className="w-full relative ">
       <div
-        className="w-full lg:bg-fixed   "
+        className="w-full bg-fixed   "
         style={{
           backgroundImage: `url(${`odi2.jpg`})`, // Replace BgOverview with your actual variable name for the background image
           backgroundSize: "cover", // Adjust as needed
