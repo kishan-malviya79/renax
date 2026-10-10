@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
         ))}
       </div>
       <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-full px-4 lg:max-w-[1440px] mx-auto lg:py-20">
-        <form className="flex  flex-col gap-5  bg-[#1b1b1b] pl-0 pt-20 rounded-lg">
+        <form className="flex flex-col gap-5 bg-[#1b1b1b] w-full sm:flex-1 pl-0 pt-20 rounded-lg">
           <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">
             Get In Touch
           </h1>
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder=" Your Name*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] w-full px-2 md:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] w-full px-5 md:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all">
                 {" "}
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder="Your Email*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-5 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all"></span>
             </label>
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder=" Your Number*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-5 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all">
                 {" "}
@@ -131,17 +131,16 @@ const Contact: React.FC = () => {
               <input
                 placeholder="Subject*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-5 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all"></span>
             </label>
           </div>
           <div className="flex  ">
             <label className="w-full relative ">
-              <input
+              <textarea
                 placeholder="Message*"
-                type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] h-40 sm:w-full w-full pl-8 p-4 pb-20 "
+                className="input bg-[#222222] text-sm rounded-[40px] h-40 w-full px-7 py-5 resize-none"
               />
               <span className="absolute left-0   text-gray-500 text-sm transition-all">
                 {" "}
@@ -152,7 +151,7 @@ const Contact: React.FC = () => {
             <Button>Send Message</Button>
           </div>
         </form>
-        <div className="flex flex-col gap-5  max-w-350px pl-0  lg:pb-0 pb-24 pt-20 bg-[#1b1b1b]  rounded-lg">
+        <div className="flex flex-col gap-5 w-full sm:w-auto pl-0  lg:pb-0 pb-24 pt-20 bg-[#1b1b1b]  rounded-lg">
           <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">
             Traffic
           </h1>
