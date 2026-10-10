@@ -28,6 +28,46 @@ import Router from "next/router";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+type NavItem = { label: string; href: string };
+type NavMenu = { label: string; href?: string; items?: NavItem[] };
+
+const menus: NavMenu[] = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/allmenuAbout" },
+  { label: "Services", href: "/services" },
+  {
+    label: "Cars",
+    items: [
+      { label: "Car Grid", href: "/cars" },
+      { label: "Car Listing", href: "/cars/listing" },
+      { label: "Car Types", href: "/cars/types" },
+      { label: "Car Details", href: "/cars/audi-q8" },
+    ],
+  },
+  {
+    label: "Pages",
+    items: [
+      { label: "Team", href: "/team" },
+      { label: "Image Gallery", href: "/gallery" },
+      { label: "Video Gallery", href: "/video-gallery" },
+      { label: "Pricing Plans", href: "/pricing" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Testimonials", href: "/testimonials" },
+      { label: "Team Single", href: "/team/ahmed-khan" },
+      { label: "404 error", href: "/404-page" },
+    ],
+  },
+  {
+    label: "Blog",
+    items: [
+      { label: "Blog Grid", href: "/blog" },
+      { label: "Blog List", href: "/blog/list" },
+      { label: "Post Single", href: "/blog/post" },
+    ],
+  },
+  { label: "Contact", href: "/Contact" },
+];
+
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
@@ -84,7 +124,7 @@ function Nav() {
           Cars
           <ChevronDown className="ml-1 h-4 w-4" />
         </Link>
-        <Link className="hover:text-yellow-500 flex items-center" href="/pages">
+        <Link className="hover:text-yellow-500 flex items-center" href="/team">
           Pages
           <ChevronDown className="ml-1 h-4 w-4" />
         </Link>
@@ -92,95 +132,32 @@ function Nav() {
           Blog
           <ChevronDown className="ml-1 h-4 w-4" />
         </Link>
-        <Link className="hover:text-yellow-500" href="/contact">
+        <Link className="hover:text-yellow-500" href="/Contact">
           Contact
         </Link> */}
           <Menubar className="flex left-20 relative gap-8">
-            <MenubarMenu>
-              <MenubarTrigger>
-                Home <ChevronDown className="size-[16px]" />
-              </MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>Slider</MenubarItem>
-                <MenubarItem>Image</MenubarItem>
-                <MenubarItem>Video</MenubarItem>
-                <MenubarItem>Slidershow</MenubarItem>
-                <MenubarSub>
-                  <MenubarSubTrigger>Onepage</MenubarSubTrigger>
-                  <MenubarSubContent>
-                    <MenubarItem>Slider</MenubarItem>
-                    <MenubarItem>Image</MenubarItem>
-                    <MenubarItem>Videos</MenubarItem>
-                    <MenubarItem>Sliveshow</MenubarItem>
-                  </MenubarSubContent>
-                </MenubarSub>
-              </MenubarContent>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarTrigger
-                onClick={() => {
-                  router.push("/allmenuAbout");
-                }}
-              >
-                About{" "}
-              </MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarMenu>
-                <MenubarTrigger>
-                  Services
-                  <ChevronDown className="size-[16px]" />
-                </MenubarTrigger>
+            {menus.map((m) => (
+              <MenubarMenu key={m.label}>
+                {m.items ? (
+                  <>
+                    <MenubarTrigger>
+                      {m.label} <ChevronDown className="size-[16px]" />
+                    </MenubarTrigger>
+                    <MenubarContent>
+                      {m.items.map((item) => (
+                        <MenubarItem key={item.label} asChild>
+                          <Link href={item.href}>{item.label}</Link>
+                        </MenubarItem>
+                      ))}
+                    </MenubarContent>
+                  </>
+                ) : (
+                  <MenubarTrigger onClick={() => router.push(m.href!)}>
+                    {m.label}
+                  </MenubarTrigger>
+                )}
               </MenubarMenu>
-              <MenubarTrigger>
-                Cars
-                <ChevronDown className="size-[16px]" />
-              </MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>Car Grid</MenubarItem>
-                <MenubarItem>Car Listing</MenubarItem>
-                <MenubarItem>Car Types 01</MenubarItem>
-                <MenubarItem>Car Types 02</MenubarItem>
-                <MenubarItem>Car Details 01</MenubarItem>
-                <MenubarItem>Car Details 02</MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarTrigger>
-                Pages
-                <ChevronDown className="size-[16px]" />
-              </MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>Team</MenubarItem>
-                <MenubarItem> Image Gallery</MenubarItem>
-                <MenubarItem> Video Gallery</MenubarItem>
-                <MenubarItem>Pricing Plang</MenubarItem>
-                <MenubarItem>FAQ</MenubarItem>
-                <MenubarItem>Testiominals</MenubarItem>
-                <MenubarItem>Team Single</MenubarItem>
-                <MenubarItem>404 error</MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarTrigger>
-                Blog
-                <ChevronDown className="size-[16px]" />
-              </MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>Blog Grid</MenubarItem>
-                <MenubarItem> Blog List</MenubarItem>
-                <MenubarItem>Post Single</MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-            <MenubarMenu>
-              <MenubarTrigger
-                onClick={() => {
-                  router.push("/contact");
-                }}
-              >
-                Contact
-              </MenubarTrigger>
-            </MenubarMenu>
+            ))}
           </Menubar>
         </nav>
         <div className="hidden lg:flex items-center">
@@ -215,7 +192,7 @@ function Nav() {
             <Separator className="opacity-50" />
             <Link
               className="py-2 hover:text-yellow-500 flex items-center gap-2"
-              href="/"
+              href="/services"
             >
               <Wrench className="h-4 w-4" />
               Services
@@ -231,7 +208,7 @@ function Nav() {
             <Separator className="opacity-50" />
             <Link
               className="py-2 hover:text-yellow-500 flex items-center gap-2"
-              href="/pages"
+              href="/team"
             >
               <NotepadText className="h-4 w-4" />
               Pages
@@ -247,7 +224,7 @@ function Nav() {
             <Separator className="opacity-50" />
             <Link
               className="py-2 hover:text-yellow-500 flex items-center gap-2"
-              href="/contact"
+              href="/Contact"
             >
               <Contact className="h-4 w-4" />
               Contact
