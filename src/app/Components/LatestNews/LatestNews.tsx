@@ -23,7 +23,7 @@ function CarouselItemComponent({ src, title, p }: CarNews) {
                     alt={title}
                     height="500"
                     width="500"
-                    className="w-full h-[320px] sm:h-[360px] object-cover transition-transform duration-300 transform hover:-scale-x-100"
+                    className="w-full h-[320px] sm:h-[360px] object-cover transition-transform duration-500 ease-out hover:scale-110"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
                 <div className="absolute bottom-4 left-[100px] right-4 flex flex-col gap-2 text-white">

@@ -18,13 +18,15 @@ function CarouselItemComponent({ src, title, num }: OurS) {
     return (
         <CarouselItem className="pl-4 md:basis-1/2 text-white lg:basis-1/3">
             <div className="flex relative">
-                <Image
-                    src={src}
-                    alt={title}
-                    height="500"
-                    width="500"
-                    className="object-contain relative right-1 sm:right-0   rounded-2xl w-[360px] max-w-full  md:w-[530px] lg:w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100"
-                />
+                <div className="overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl max-w-full lg:w-full">
+                    <Image
+                        src={src}
+                        alt={title}
+                        height="500"
+                        width="500"
+                        className="object-contain relative right-1 sm:right-0 w-[360px] max-w-full md:w-[530px] lg:w-full transition-transform duration-500 ease-out hover:scale-110"
+                    />
+                </div>
                 <div className="absolute top-4 left-0 w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
                     <div className='absolute top-[1px] left-0 h-8 px-6 py-6 bg-transparent text-white'>
                         <h1 className='font-Outfit font-bold w-[10ch] text-[20px]'>{title}</h1>

@@ -32,13 +32,15 @@ function Rentax() {
           </div>
         </div>
         <div className="flex relative mt-6 md:mt-0 max-w-full">
-          <Image
-            src={`/about.jpg`}
-            alt="jordans"
-            height="500"  
-            width="500"
-            className="object-contain rounded-tl-3xl rounded-tr-3xl w-[360px] max-w-full  md:w-[720px] lg:w-[700px] rounded-bl-none rounded-br-3xl transition-transform duration-300 transform hover:-scale-x-100 "
-          />
+          <div className="overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl max-w-full">
+            <Image
+              src={`/about.jpg`}
+              alt="jordans"
+              height="500"
+              width="500"
+              className="object-contain w-[360px] max-w-full md:w-[720px] lg:w-[700px] transition-transform duration-500 ease-out hover:scale-110"
+            />
+          </div>
           <div className=" absolute bottom-0 left-0 bg-[#1b1b1b] w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
             <Button className='absolute top-[15px] left-0  h-8 px-6 py-6 bg-transparent border-[#f5b754] border hover:bg-[#f5b754] rounded-[50px]   '>

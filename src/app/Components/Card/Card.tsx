@@ -22,13 +22,13 @@ function RentalCarsType() {
                     <Carousel>
                         <CarouselContent className='gap-6  '>
                             <CarouselItem className="md:basis-1/2  text-white  lg:basis-1/3">
-                                <div className="flex  relative">
+                                <div className="flex relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl">
                                     <Image
                                         src={`/03.jpg`}
                                         alt="al"
                                         height="500"
                                         width="500"
-                                        className="object-contain  rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform  hover:-scale-x-100   "
+                                        className="object-contain  rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-500 ease-out hover:scale-110"
                                     />
                                     <div className=" absolute top-4 left-0  w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
@@ -48,13 +48,13 @@ function RentalCarsType() {
 
                             </CarouselItem>
                             <CarouselItem className="md:basis-1/2  text-white lg:basis-1/3">
-                            <div className="flex  relative">
+                            <div className="flex relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl">
                             <Image
                                 src={`/04.jpg`}
                                 alt="al"
                                 height="500"
                                 width="500"
-                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform  hover:-scale-x-100   "
+                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-500 ease-out hover:scale-110"
                             />
                             <div className=" absolute top-4 left-0  w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
@@ -74,13 +74,13 @@ function RentalCarsType() {
 
                             </CarouselItem>
                             <CarouselItem className="md:basis-1/2  text-white lg:basis-1/3">
-                            <div className="flex  relative">
+                            <div className="flex relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl">
                             <Image
                                 src={`/02.jpg`}
                                 alt="al"
                                 height="500"
                                 width="500"
-                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform  hover:-scale-x-100   "
+                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-500 ease-out hover:scale-110"
                             />
                             <div className=" absolute top-4 left-0  w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
@@ -100,13 +100,13 @@ function RentalCarsType() {
 
                             </CarouselItem>
                             <CarouselItem className="md:basis-1/2  text-white lg:basis-1/3">
-                            <div className="flex  relative">
+                            <div className="flex relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl">
                             <Image
                                 src={`/02.jpg`}
                                 alt="al"
                                 height="500"
                                 width="500"
-                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform  hover:-scale-x-100   "
+                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-500 ease-out hover:scale-110"
                             />
                             <div className=" absolute top-4 left-0  w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
@@ -126,13 +126,13 @@ function RentalCarsType() {
 
                             </CarouselItem>
                             <CarouselItem className="md:basis-1/2  text-white lg:basis-1/3">
-                            <div className="flex  relative">
+                            <div className="flex relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-3xl">
                             <Image
                                 src={`/02.jpg`}
                                 alt="al"
                                 height="500"
                                 width="500"
-                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-300 transform  hover:-scale-x-100   "
+                                className="object-contain rounded-tl-3xl rounded-tr-3xl  rounded-bl-none rounded-br-3xl transition-transform duration-500 ease-out hover:scale-110"
                             />
                             <div className=" absolute top-4 left-0  w-[85px] h-[85px] text-center rounded-tl-none rounded-tr-lg">
 
