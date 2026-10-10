@@ -57,7 +57,7 @@ function Nav() {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* <div className="items-center lg:items-center justify-between  text-white flex gap-24 py-6 px-4 md:px-3 lg:px-36  w-full  lg:w-[1440px] mx-auto md:py-0 "> */}
+        {/* <div className="items-center lg:items-center justify-between  text-white flex gap-24 py-6 px-4 md:px-3 lg:px-36  w-full  lg:max-w-[1440px] mx-auto md:py-0 "> */}
         <Image
           src={`/Renax-logo.png`}
           alt="jordans"

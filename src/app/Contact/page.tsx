@@ -54,8 +54,8 @@ const Contact: React.FC = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
           {/* Black overlay */}
           <div className="relative w-full py-28">
-            {/* <div className=' items-center  content-center  text-white flex px-4  lg:px-36    w-full md:w-[1440px] mx-auto md:py-20'> */}
-            <div className="relative items-center justify-center text-white flex flex-col py-24 sm:px-36 w-full lg:w-[1440px] mx-auto md:py-20">
+            {/* <div className=' items-center  content-center  text-white flex px-4  lg:px-36    w-full md:max-w-[1440px] mx-auto md:py-20'> */}
+            <div className="relative items-center justify-center text-white flex flex-col py-24 px-4 sm:px-36 w-full lg:max-w-[1440px] mx-auto md:py-20">
               <div className=" items-center  sm:items-start flex flex-col sm:gap-4">
                 <h5 className="text-[#f5b754] tracking-[6px] text-[10px]">
                   GET IN TOUCH
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
 
-      <div className="items-start relative -top-7  right-3 sm:right-0  justify-start flex sm:flex-row flex-col  gap-6 sm:gap-0 px-5 lg:px-36 w-full lg:w-[1440px] mx-auto md:py-0">
+      <div className="items-start relative -top-7  right-3 sm:right-0  justify-start flex sm:flex-row flex-col  gap-6 sm:gap-0 px-4 lg:px-36 w-full lg:max-w-[1440px] mx-auto md:py-0">
         {contactItems.map((item, index) => (
           <div
             key={index}
@@ -91,8 +91,8 @@ const Contact: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-[356px] sm:w-full lg:w-[1440px] mx-auto lg:py-20">
-        <form className="flex  flex-col gap-5 left-4 relative sm:left-0  bg-[#1b1b1b] pl-0 pt-20 rounded-lg">
+      <div className="items-start relative md:gap-28   justify-between text-white flex  flex-col sm:flex-row md:px-8 lg:px-36 w-full px-4 lg:max-w-[1440px] mx-auto lg:py-20">
+        <form className="flex  flex-col gap-5  bg-[#1b1b1b] pl-0 pt-20 rounded-lg">
           <h1 className="font-Outfit flex items-center justify-center font-bold text-white text-[18px]">
             Get In Touch
           </h1>
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder=" Your Name*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] w-full md:w-80 px-2 md:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] w-full px-2 md:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all">
                 {" "}
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder="Your Email*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-80 px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all"></span>
             </label>
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder=" Your Number*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-80 px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all">
                 {" "}
@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder="Subject*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-80 px-2 sm:px-7 py-4 "
+                className="input bg-[#222222] text-sm rounded-[40px] sm:w-full w-full px-2 sm:px-7 py-4 "
               />
               <span className="absolute left-0  text-gray-500 text-sm transition-all"></span>
             </label>
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
               <input
                 placeholder="Message*"
                 type="text"
-                className="input bg-[#222222] text-sm rounded-[40px] h-40 sm:w-full w-80 pl-8 p-4 pb-20 "
+                className="input bg-[#222222] text-sm rounded-[40px] h-40 sm:w-full w-full pl-8 p-4 pb-20 "
               />
               <span className="absolute left-0   text-gray-500 text-sm transition-all">
                 {" "}
@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
             Traffic
           </h1>
           <div
-            className=" w-[356px] h-[350px] lg:w-[500px] lg:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
+            className=" w-full max-w-[500px] h-[350px] lg:w-[500px] lg:h-[380px] rounded-[26px] bg-cover bg-center  bg-no-repeat relative"
             style={{
               backgroundImage: `url(${`traffic.jpg`})`, // Replace bugatti.jpg with your actual image file name or path
             }}

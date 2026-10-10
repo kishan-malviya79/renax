@@ -9,7 +9,7 @@ function RentalCarsType() {
         <div className="  w-full h-screen bg-[#1b1b1b]  " >
             <div className="  w-full " >
 
-                <div className=' relative items-center  justify-center gap-28 flex-col  text-white flex   px-36 w-full md:w-[1440px] mx-auto md:py-0'>
+                <div className=' relative items-center  justify-center gap-28 flex-col  text-white flex   px-4 lg:px-36 w-full md:max-w-[1440px] mx-auto md:py-0'>
                     <span className='w-[1px] flex items-center justify-center bg-[#f5b754]  h-12 '></span>
                     <div className="">
 
