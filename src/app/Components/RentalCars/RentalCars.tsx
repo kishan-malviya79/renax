@@ -37,7 +37,7 @@ function RentalCars() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="  w-full py-28 ">
           <div className=" relative items-center  justify-center content-center  text-white flex px-4 lg:px-36 w-full lg:max-w-[1440px] mx-auto md:py-0">
-            <div className="  items-center flex flex-col gap-4">
+            <div className="  items-center flex flex-col gap-4 w-full lg:w-auto">
               <h5 className=" size-5 relative sm:right-3 w-[18ch] text-[#f5b754] tracking-[6px] text-[12px]">
                 {" "}
                 RENT NOW
@@ -45,7 +45,7 @@ function RentalCars() {
               <h1 className=" font-Outfit, font-bold  text-[35px]">
                 Book Auto Rental
               </h1>
-              <div className=" w-full max-w-[356px] md:max-w-none     bg-[#222] gap-3  flex flex-col  h-[492px] sm:h-auto  sm:flex-row  px-6 py-6 items-center rounded-3xl xl:rounded-full ">
+              <div className=" w-full     bg-[#222] gap-3  flex flex-col  h-[492px] sm:h-auto  sm:flex-row  px-6 py-6 items-center rounded-3xl xl:rounded-full ">
                 <Menubar className=" gap-8 sm:gap-6   flex flex-col  h-[400px] xl:h-auto w-full md:flex-col xl:flex-row">
                   <MenubarMenu>
                     <MenubarTrigger className=" w-full  px-2 sm:px-0 relative sm:w-[17ch]   justify-between flex ">

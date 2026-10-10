@@ -2,9 +2,10 @@
 
 import { carNews, carTypes } from '@/components/ui'
 import { Button } from '@/components/ui/button'
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { CarouselDots } from '@/components/ui/CarouselDots'
 import React, { useState } from 'react'
 
 interface CarNews {
@@ -40,16 +41,9 @@ function CarouselItemComponent({ src, title, p }: CarNews) {
 }
 
 function LatestNews() {
-    const [selectedSet, setSelectedSet] = useState(1);
+    const [api, setApi] = useState<CarouselApi>();
 
-    const getVisibleCars = () => {
-        if (selectedSet === 1) {
-            return carNews.slice(0, 3);
-        } else {
-            return carNews.slice(3, 6);
-        }
-    };
-
+    
     return (
         <div className="w-full pt-28 pb-20 bg-[#1b1b1b]">
             <div className="w-full">
@@ -63,37 +57,15 @@ function LatestNews() {
                             <h1 className='font-Outfit font-bold w-full text-[35px]'>Latest <span className='text-[#f5b754]'>News</span></h1>
                         </div>
                     </div>
-                    <Carousel opts={{ align: "start" }} className='w-full'>
+                    <Carousel setApi={setApi} opts={{ align: "start" }} className='w-full'>
                             <CarouselContent className="-ml-4">
-                                {getVisibleCars().map((car, index) => (
+                                {carNews.map((car, index) => (
                                     <CarouselItemComponent key={index} src={car.src} title={car.title} p={car.p} />
                                 ))}
                             </CarouselContent>
                         </Carousel>
                     <div className="flex flex-col items-center gap-4">
-                        <div className="flex gap-4">
-                            <label className="flex items-center  gap-2">
-                                <input
-                                    type="radio"
-                                    name="carSet"
-                                    value="1"
-                                    checked={selectedSet === 1}
-                                    onChange={() => setSelectedSet(1)}
-                                    className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
-                                />
-                            </label>
-                            <label className="flex items-center gap-2">
-                                <input
-                                    type="radio"
-                                    name="carSet"
-                                    value="2"
-                                    checked={selectedSet === 2}
-                                    onChange={() => setSelectedSet(2)}
-                                    className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
-                                />
-                              
-                            </label>
-                        </div>
+                        <CarouselDots api={api} />
                        
                     </div>
                 </div>

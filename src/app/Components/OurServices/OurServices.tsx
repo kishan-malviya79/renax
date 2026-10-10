@@ -2,9 +2,10 @@
 
 import { OurS, carTypes } from '@/components/ui'
 import { Button } from '@/components/ui/button'
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { CarouselDots } from '@/components/ui/CarouselDots'
 import React, { useState } from 'react'
 
 interface OurS {
@@ -15,7 +16,7 @@ interface OurS {
 
 function CarouselItemComponent({ src, title, num }: OurS) {
     return (
-        <CarouselItem className="md:basis-1/2      text-white lg:basis-1/3">
+        <CarouselItem className="pl-4 md:basis-1/2 text-white lg:basis-1/3">
             <div className="flex relative">
                 <Image
                     src={src}
@@ -40,16 +41,9 @@ function CarouselItemComponent({ src, title, num }: OurS) {
 }
 
 function OurServices() {
-    const [selectedSet, setSelectedSet] = useState(1);
+    const [api, setApi] = useState<CarouselApi>();
 
-    const getVisibleCars = () => {
-        if (selectedSet === 1) {
-            return OurS.slice(0, 3);
-        } else {
-            return OurS.slice(3, 6);
-        }
-    };
-
+    
     return (
         <div className="w-full pb-20  bg-[#1b1b1b]">
             <div className="w-full">
@@ -61,37 +55,15 @@ function OurServices() {
                             <h1 className='font-Outfit font-bold w-full text-[35px]'>Our <span className='text-[#f5b754]'>Services</span></h1>
                         </div>
                     </div>
-                    <Carousel opts={{ align: "start" }} className='w-full'>
-                            <CarouselContent className="-ml-1">
-                                {getVisibleCars().map((car, index) => (
+                    <Carousel setApi={setApi} opts={{ align: "start" }} className='w-full'>
+                            <CarouselContent className="-ml-4">
+                                {OurS.map((car, index) => (
                                     <CarouselItemComponent key={index} src={car.src} title={car.title} num={car.num} />
                                 ))}
                             </CarouselContent>
                         </Carousel>
                     <div className="flex flex-col items-center gap-4">
-                        <div className="flex gap-4">
-                            <label className="flex items-center  gap-2">
-                                <input
-                                    type="radio"
-                                    name="carSet"
-                                    value="1"
-                                    checked={selectedSet === 1}
-                                    onChange={() => setSelectedSet(1)}
-                                    className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
-                                />
-                            </label>
-                            <label className="flex items-center gap-2">
-                                <input
-                                    type="radio"
-                                    name="carSet"
-                                    value="2"
-                                    checked={selectedSet === 2}
-                                    onChange={() => setSelectedSet(2)}
-                                    
-                                    className="appearance-none h-4 w-4 border border-gray-300 rounded-full bg-black checked:bg-yellow-500 hover:bg-yellow-300"
-                                />
-                            </label>
-                        </div>
+                        <CarouselDots api={api} />
                        
                     </div>
                 </div>
