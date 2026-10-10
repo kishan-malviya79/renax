@@ -33,13 +33,15 @@ const LuxuryCar: React.FC = () => {
           <CarouselContent className="gap-6">
             {carDetails.map((car, index) => (
               <CarouselItem key={index} className="md:basis-1/1 relative md:px-32 lg:px-0 text-white lg:basis-1/3">
-                <Image
-                  src={car.src}
-                  alt={car.name}
-                  height={1100}
-                  width={1100}
-                  className="object-contain relative left-2 lg:left-0 rounded-2xl  w-[360px] max-w-full  md:w-[720px] lg:w-full"
-                />
+                <div className="overflow-hidden rounded-2xl relative left-2 lg:left-0 w-[360px] max-w-full md:w-[720px] lg:w-full">
+                  <Image
+                    src={car.src}
+                    alt={car.name}
+                    height={1100}
+                    width={1100}
+                    className="object-contain w-full transition-transform duration-500 ease-out hover:scale-110"
+                  />
+                </div>
                 <div className="relative -top-7 px-4 py-6 rounded-2xl sm:items-center flex sm:flex-row flex-col  lg:justify-between gap-3 md:gap-36 lg:gap-0 bg-[#222] mx-3">
                   <div className="flex flex-col">
                     <h1 className="font-Outfit font-bold text-[18px]">{car.name}</h1>
